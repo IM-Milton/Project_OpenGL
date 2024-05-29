@@ -8,6 +8,7 @@
 #include <iostream>
 #include <cmath>
 #include <GL/gl.h>
+#include <Object.h>
 
 
 // Module for space geometry
@@ -307,6 +308,7 @@ void update(Form* formlist[MAX_FORMS_NUMBER], double delta_t)
 {
     // Update the list of forms
     unsigned short i = 0;
+
     while(formlist[i] != NULL)
     {
         formlist[i]->update(delta_t);
