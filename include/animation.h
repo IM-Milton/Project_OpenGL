@@ -10,6 +10,7 @@ private:
     double phi, theta; // Azimuthal and polar angles for local coordinate system orientation
     Vector acc, spd; //  Instantaneous acceleration and speed
     Point pos; // Instantaneous position of the local coordinate system origin
+    Point rotation; // Angles de rotation en degrées sur les axes X, Y, Z
 
 public:
     Animation(double ph = 0.0, double th = 0.0,
@@ -27,6 +28,10 @@ public:
     void setSpeed(Vector vect) {spd = vect;}
     Point getPos() const {return pos;}
     void setPos(Point pt) {pos = pt;}
+    //Rotation en degrées
+    Point getRotation() const { return rotation; }
+    //Rotation en degrées
+    void setRotation(Point rot) { rotation = rot; }
 };
 
 

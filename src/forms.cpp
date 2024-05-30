@@ -13,8 +13,19 @@ void Form::render()
     // Point of view for rendering
     // Common for all Forms
     Point org = anim.getPos();
+    Point rot = anim.getRotation();
+
+    
     glTranslated(org.x, org.y, org.z);
+
+    glRotated(rot.x, 1.0, 0.0, 0.0); // Rotation autour de l'axe X
+    glRotated(rot.y, 0.0, 1.0, 0.0); // Rotation autour de l'axe Y
+    glRotated(rot.z, 0.0, 0.0, 1.0); // Rotation autour de l'axe Z
+    
     glColor3f(col.r, col.g, col.b);
+    
+    // Render the form
+    // Add your rendering code here
 }
 
 Sphere::Sphere(double r, Color cl)
@@ -143,7 +154,7 @@ void Brique::render() {
 void Brique::update(double delta_t) {
     // Calcul du PFD 
 
-    Vector sumForce = getFg() + getFn();
+    Vector sumForce = getFg() + getFn();// + getFe;
     //Determination de l'acceleration à partir du PFD
     //Somme des force = masse * acc
     //acc = Somme des force / masse
@@ -159,13 +170,13 @@ void Brique::update(double delta_t) {
     // On intergre la vitesse pour obtenir le delta position qu'on vient rajouter à notre position actuelle
     // moveRelative(anim.getSpeed().integral(delta_t));
     Point position = speed.integral(delta_t);
-    moveRelative(position);
+    // moveRelative(position);
 
-    printf("accel : x:%1.2f y:%1.2f z:%1.2f  ;;  speed : x:%1.2f y:%1.2f z:%1.2f ;; position : x:%1.2f y:%1.2f z:%1.2f \n",
-                                        anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
-                                        anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
-                                        anim.getPos().x, anim.getPos().y, anim.getPos().z
-                                        );
+    // printf("accel : x:%1.2f y:%1.2f z:%1.2f  ;;  speed : x:%1.2f y:%1.2f z:%1.2f ;; position : x:%1.2f y:%1.2f z:%1.2f \n",
+    //                                     anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
+    //                                     anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
+    //                                     anim.getPos().x, anim.getPos().y, anim.getPos().z
+    //                                     );
 }
 
 void Sol::render() {

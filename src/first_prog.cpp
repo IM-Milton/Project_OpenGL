@@ -74,7 +74,6 @@ int main(int argc, char* args[])
         // Camera position
         Point camera_position(0, 1.0, 10.0);
 
-
         // The forms to render
         Form* forms_list[MAX_FORMS_NUMBER];
         unsigned short number_of_forms = 0, i;
@@ -91,19 +90,17 @@ int main(int argc, char* args[])
         // number_of_forms++;
 
         Sol *sol = new Sol(GREEN); // Créez un nouvel objet de brique en dehors de la boucle
-        if (!sol->loadSTL("Solidworks/sol.STL")){
+        if (!sol->loadSTL("Solidworks/catapulte_all_temp2.STL")){
             printf("Failed to load sol.STL model!\n");
             delete sol; // Supprimez l'objet brique si le chargement échoue
         }
         Point sizeSol(50, 0, 50);//sol de taille de 50 m , 0 m, 50 m
         sol->setSize(sizeSol);
         printf("Size Objet : size X = %2.1f, size Y = %2.1f, size Z = %2.1f\n", sizeSol.x, sizeSol.y, sizeSol.z);
-        Point pt(-sizeSol.x/2, 0, -sizeSol.z/2);
-        sol->moveAbsolue(pt); // Déplacez le nouvel objet brique
+        Point pt(0, 0, 0);
+        // sol->moveAbsolue(pt); // Déplacez le nouvel objet brique
         forms_list[number_of_forms] = sol; // Stockez le nouvel objet dans le tableau
         number_of_forms++;
-
-
 
         // The forms to render
 
@@ -328,10 +325,10 @@ void update(Form* formlist[MAX_FORMS_NUMBER], double delta_t) {
                     // Collision détectée : ajustez la position et la Force de contre reaction de la brique sur le sol
                     pos.y = posSol.y + sizeSol.y;
                     Vector force_contre_reaction(0.0, formlist[i]->g * formlist[i]->getMasse(), 0.0); // Force de contre reaction
-                    formlist[i]->setFn(force_contre_reaction);
-                    speed.y = 0;
-                    formlist[i]->getAnim().setPos(pos);
-                    formlist[i]->getAnim().setSpeed(speed);
+                     //formlist[i]->setFn(force_contre_reaction);
+                    // speed.y = -1/formlist[i]->getMasse() *speed.y;//0;
+                    // formlist[i]->getAnim().setPos(pos);
+                    // formlist[i]->getAnim().setSpeed(speed);
 
                 }
 
@@ -402,14 +399,17 @@ void setupMurDeBrique(Form* formlist[MAX_FORMS_NUMBER], unsigned short &number_o
         delete brique; // Supprimez l'objet brique si le chargement échoue
         return;
     }
-    brique->setMasse(18.4);
+    brique->setMasse(18.4);//kg
     brique->setSize(size);
     printf("Size Objet : size X = %2.1f, size Y = %2.1f, size Z = %2.1f\n", size.x, size.y, size.z);
-    Point pt(0, 5, 0);
+    Point pt(0, 0, 0);
+    Point rot(45,0,0);//en degrees
+    brique->getAnim().setRotation(rot);
     brique->moveAbsolue(pt); // Déplacez le nouvel objet brique
+    // brique.set
     formlist[number_of_forms] = brique; // Stockez le nouvel objet dans le tableau
     number_of_forms++;
-    
+
     // for (int i = 0; i < largeur; i++) {
     //     for (int j = 0; j < Longeur; j++) {
     //         Brique* newBrique = new Brique(*brique); // Créez un nouvel objet brique à chaque itération
@@ -435,4 +435,3 @@ void close(SDL_Window** window)
     //Quit SDL subsystems
     SDL_Quit();
 }
-
