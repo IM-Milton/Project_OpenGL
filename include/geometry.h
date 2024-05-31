@@ -3,14 +3,12 @@
 
 #include <iostream>
 
-
 class Coordinates
 {
 public:
     double x, y, z;
     Coordinates(double xx=0, double yy=0, double zz=0) {x=xx; y=yy; z=zz;}
 };
-
 
 // Declaration in order to use it within Point methods
 class Vector;
@@ -25,8 +23,16 @@ public:
     Point operator+(Point& v) const {
         return Point(x + v.x, y + v.y, z + v.z);
     }
+    
+    Point operator-(Point& v) const {
+        return Point(x - v.x, y - v.y, z - v.z);
+    }
 };
 
+typedef struct HitZone
+{
+    float rayon;//Rayon de la sphere
+}HitZone;
 
 class Vector : public Coordinates
 {
@@ -40,14 +46,10 @@ public:
     Vector integral(double delta_t);
     // Overloaded standard operators
     void operator+=(const Vector &v);
-
     operator Point() const {
         return Point(x, y, z);
     }
-
-    
 };
-
 
 // Compute the distance between two points
 double distance(Point p1, Point p2);
@@ -62,5 +64,27 @@ Vector operator*(const double &k, const Vector &v);
 double operator*(const Vector &v1, const Vector &v2);
 // Vector product
 Vector operator^(const Vector &v1, const Vector &v2);
+
+Point operator+(const Vector &v, Point &p);
+Point operator+(Point &p, const Vector &v);
+Point operator-(const Vector &v, Point &p);
+Point operator-(Point &p, const Vector &v);
+
+
+class Plan
+{
+public:
+    Vector v1, v2, normal;
+    Plan(Vector v1, Vector v2){
+        v1 = v1;
+        v2 = v2;
+        normal = v1 ^ v2;
+    }
+    Plan(){
+        v1 = 0;
+        v2 = 0;
+        normal = v1 ^ v2;
+    }
+};
 
 #endif // GEOMETRY_H_INCLUDED

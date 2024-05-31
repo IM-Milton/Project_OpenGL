@@ -15,7 +15,6 @@ void Form::render()
     Point org = anim.getPos();
     Point rot = anim.getRotation();
 
-    
     glTranslated(org.x, org.y, org.z);
 
     glRotated(rot.x, 1.0, 0.0, 0.0); // Rotation autour de l'axe X
@@ -26,67 +25,6 @@ void Form::render()
     
     // Render the form
     // Add your rendering code here
-}
-
-Sphere::Sphere(double r, Color cl)
-{
-    setID(SPHERE);
-    radius = r;
-    col = cl;
-
-}
-
-void Sphere::update(double delta_t)
-{
-
-}
-
-void Sphere::render()
-{
-    GLUquadric *quad;
-
-    quad = gluNewQuadric();
-
-    // Complete this part
-
-    gluDeleteQuadric(quad);
-}
-
-Cube::Cube(Vector v1, Vector v2, Point org, double l, double w, Color cl)
-{
-    setID(CUBE);
-    vdir1 = 1.0 / v1.norm() * v1;
-    vdir2 = 1.0 / v2.norm() * v2;
-    anim.setPos(org);
-    length = l;
-    width = w;
-    col = cl;
-}
-
-void Cube::update(double delta_t)
-{
-    // printf("Cube\n");
-}
-
-void Cube::render()
-{
-    Point p1 = Point();
-    Point p2 = p1, p3, p4 = p1;
-    p2.translate(vdir1);
-    p3 = p2;
-    p3.translate(vdir2);
-    p4.translate(vdir2);
-
-    Form::render();
-
-    glBegin(GL_QUADS);
-    {
-        glVertex3d(p1.x, p1.y, p1.z);
-        glVertex3d(p2.x, p2.y, p2.z);
-        glVertex3d(p3.x, p3.y, p3.z);
-        glVertex3d(p4.x, p4.y, p4.z);
-    }
-    glEnd();
 }
 
 bool Form::loadSTL(const std::string& path) {
@@ -153,30 +91,29 @@ void Brique::render() {
 
 void Brique::update(double delta_t) {
     // Calcul du PFD 
-
-    Vector sumForce = getFg() + getFn();// + getFe;
+    
+    Vector sumForce = getFg() + getFn();
     //Determination de l'acceleration à partir du PFD
     //Somme des force = masse * acc
     //acc = Somme des force / masse
-    Vector acc(sumForce.x/getMasse(), sumForce.y/getMasse(), sumForce.z/getMasse());
+    float masse = anim.getMasse();
+    Vector acc(sumForce.x/masse, sumForce.y/masse, sumForce.z/masse);
     anim.setAccel(acc);
     //Intergrer pour avoir la vitesse
     Vector speed = anim.getSpeed() + anim.getAccel().integral(delta_t);//+v0;
     anim.setSpeed(speed);
     
-    
-    
     // Mettez à jour la position en fonction de la vitesse et du temps
     // On intergre la vitesse pour obtenir le delta position qu'on vient rajouter à notre position actuelle
-    // moveRelative(anim.getSpeed().integral(delta_t));
+    // anim.setPosRelative(anim.getSpeed().integral(delta_t));
     Point position = speed.integral(delta_t);
-    // moveRelative(position);
+    anim.setPosRelative(position);
 
-    // printf("accel : x:%1.2f y:%1.2f z:%1.2f  ;;  speed : x:%1.2f y:%1.2f z:%1.2f ;; position : x:%1.2f y:%1.2f z:%1.2f \n",
-    //                                     anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
-    //                                     anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
-    //                                     anim.getPos().x, anim.getPos().y, anim.getPos().z
-    //                                     );
+    printf("accel : x:%3.2f y:%3.2f z:%3.2f  ;;  speed : x:%3.2f y:%3.2f z:%3.2f ;; position : x:%3.2f y:%3.2f z:%3.2f \n",
+                                        anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
+                                        anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
+                                        anim.getPos().x, anim.getPos().y, anim.getPos().z
+                                        );
 }
 
 void Sol::render() {

@@ -119,3 +119,27 @@ Vector operator^(const Vector &v1, const Vector &v2)
 
     return res;
 }
+
+Point operator+(const Vector &v, Point &p){
+    Point res = v;
+    res = res + p;
+    return res;
+}
+
+Point operator+(Point &p, const Vector &v){
+    Point res = v;
+    res = res + p;
+    return res;
+}
+
+Point operator-(const Vector &v, Point &p){
+    Point res = v;
+    res = res - p;
+    return res;
+}
+
+Point operator-(Point &p, const Vector &v){
+    Point res = v;
+    res = res - p;
+    return res;
+}

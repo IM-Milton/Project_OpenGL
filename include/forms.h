@@ -16,11 +16,8 @@
 
 
 enum SHAPE_ID{
-    CUBE,
-    SPHERE,
-    CYLINDER,
-    CONE,
     BRIQUE,
+    CATAPULTE_CHASSIS,
     SOL
 };
 
@@ -57,8 +54,8 @@ protected:
     SHAPE_ID _id;
 
     //Partie Physique : ------------------------------------------------
-    float _masse;
     Vector _Fn;
+    Plan plan;
     //Partie Physique Fin -----------------------------------------------
 public:
 
@@ -66,6 +63,9 @@ public:
     void setAnim(Animation ani) {anim = ani;}
     void setID(SHAPE_ID id) {_id = id;}
     SHAPE_ID getTypeForm() {return _id;}
+
+    Plan& getPlan() {return plan;}//Utiliser si la form est un plan, comme le sol
+    void setPlan(Plan pl){plan = pl;}
 
     std::vector<Triangle> triangleSTL;//Pour le STL
     bool loadSTL(const std::string& path);
@@ -77,34 +77,22 @@ public:
     // Virtual method : Form is a generic type, only setting color and reference position
     virtual void render();
 
-    void moveRelative(Point position) {
-        anim.setPos(anim.getPos() + position);
-    }
-    void moveAbsolue(Point position) {
-        anim.setPos(position);
-    }
-
     void setTriangles(const std::vector<Triangle>& tris) {
         triangleSTL = tris;
     }
     void getTriangles(std::vector<Triangle>& tr){
         tr = triangleSTL;
     }
-    void setColor(Color cl) {col = cl;} 
+    void setColor(Color cl) {col = cl;}
 
     //Partie Physique : ------------------------------------------------
     const float g = 9.81; // Accélération gravitationnelle en m/s^2
 
-    void setMasse(float kg) {_masse = kg;}
-    //En kg
-    float getMasse(){return _masse;} 
-
     Vector getFg(){
         //Doit dependre de la position de l'objet, sa rotation etc
-        Vector Fg(0.0, -1*getMasse()*g, 0.0); // Force de gravité dirigée vers le bas 
+        Vector Fg(0.0, -1*anim.getMasse()*g, 0.0); // Force de gravité dirigée vers le bas
         return Fg;
     }
-
     //force perpendiculaire à la surface du sol qui empêche l'objet de passer à travers le sol.
     void setFn(const Vector &Fn){
         _Fn = Fn;
@@ -113,81 +101,41 @@ public:
     Vector getFn(){
         return _Fn;
     }
-   //Partie Physique Fin -----------------------------------------------
+    //Partie Physique Fin -----------------------------------------------
 };
-
-// A particular Form
-class Sphere : public Form
-{
-private:
-    // The sphere center is aligned with the coordinate system origin
-    // => no center required here, information is stored in the anim object
-    double radius;
-public:
-    Sphere(double r = 1.0, Color cl = Color());
-    double getRadius() const {return radius;}
-    void setRadius(double r) {radius = r;}
-    void update(double delta_t);
-    void render();
-};
-
-// A face of a cube
-class Cube : public Form
-{
-private:
-    Vector vdir1, vdir2;
-    double length, width;
-    float _masse;
-    Point size;
-public:
-    Cube(Vector v1 = Vector(1,0,0), Vector v2 = Vector(0,0,1),
-          Point org = Point(), double l = 1.0, double w = 1.0,
-          Color cl = Color());
-    
-
-
-    void update(double delta_t);
-    void render();
-};
-
-
 
 // Quel est le poids d'un parpaing de 20 par 20 par 50 ?
 // Parpaing creux 20x20x50 NF DB
-// longueur :	500 mm
+// longueur:	500 mm
 // largeur :	200 mm
 // hauteur :	200 mm
-// poids :	18.4 Kilo(s) (merci google)
+// poids   :	18.4 Kilo(s) (merci google)
 class Brique : public Form
 {
-private:
-    Point _sizeObjet;//La place que prend l'objet dans les trois axes
 public:
-    Brique(Color cl = Color(), float masse = 18.4) {
+    Brique(Color cl = Color(), float masse = 18.4, HitZone size = {200}){
         setID(BRIQUE);
         col = cl;
-        setMasse(masse);//En kg
+        anim.setMasse(masse);//En kg
+        anim.setSize(size);
         setFn(Vector(0.0, 0.0, 0.0));
     }
-     void setSize(const Point size) {//La place que prend l'objet dans les trois axes
-        _sizeObjet = size;
-    }
+
     void render();
     void update(double delta_t);
 };
 
 class Sol : public Form
 {
-private:
-    Point _sizeObjet;//La place que prend l'objet dans les trois axes
 public:
     Sol(Color cl = Color()) {
         setID(SOL);
         col = cl;
-        setMasse(1);
-    }
-     void setSize(const Point size) {//La place que prend l'objet dans les trois axes
-        _sizeObjet = size;
+        anim.setMasse(1);
+        plan.v1 = Vector(0.0, 0.0, 0.0);
+        plan.v2 = Vector(0.0, 0.0, 0.0);
+        plan.normal = plan.v1 ^ plan.v2;
+        setPlan(plan);
     }
     void render();
     void update(double delta_t);
