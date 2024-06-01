@@ -24,6 +24,24 @@ double Vector::norm()
     return norm;
 }
 
+/**
+ * @brief Computes the dot product of the current vector with another vector.
+ * 
+ * @param v The other vector to compute the dot product with.
+ * @return The dot product of the current vector and the other vector.
+ * 
+ * The dot product is a scalar value that represents the cosine of the angle between two vectors.
+ * It is calculated as the sum of the product of corresponding components of the two vectors.
+ * 
+ * The formula for the dot product is: dot(v1, v2) = v1.x * v2.x + v1.y * v2.y + v1.z * v2.z
+ * 
+ * This method is useful for various applications such as calculating the angle between vectors,
+ * checking for orthogonality, and performing vector projections.
+ */
+double Vector::dot(const Vector& v) const {
+    return x * v.x + y * v.y + z * v.z;
+}
+
 Vector Vector::integral(double delta_t)
 {
     Vector res;
@@ -41,6 +59,8 @@ void Vector::operator+=(const Vector &v)
     y += v.y;
     z += v.z;
 }
+
+
 
 double distance(Point p1, Point p2)
 {
@@ -120,6 +140,38 @@ Vector operator^(const Vector &v1, const Vector &v2)
     return res;
 }
 
+// Fonctions de rotation
+Vector rotateAroundX(const Vector& v, double theta) {
+    double cosTheta = cos(theta);
+    double sinTheta = sin(theta);
+    return Vector(
+        v.x,
+        v.y * cosTheta - v.z * sinTheta,
+        v.y * sinTheta + v.z * cosTheta
+    );
+}
+
+Vector rotateAroundY(const Vector& v, double theta) {
+    double cosTheta = cos(theta);
+    double sinTheta = sin(theta);
+    return Vector(
+        v.x * cosTheta + v.z * sinTheta,
+        v.y,
+        -v.x * sinTheta + v.z * cosTheta
+    );
+}
+
+Vector rotateAroundZ(const Vector& v, double theta) {
+    double cosTheta = cos(theta);
+    double sinTheta = sin(theta);
+    return Vector(
+        v.x * cosTheta - v.y * sinTheta,
+        v.x * sinTheta + v.y * cosTheta,
+        v.z
+    );
+}
+
+
 Point operator+(const Vector &v, Point &p){
     Point res = v;
     res = res + p;
@@ -143,3 +195,4 @@ Point operator-(Point &p, const Vector &v){
     res = res - p;
     return res;
 }
+

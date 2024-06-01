@@ -17,7 +17,7 @@
 /* Constants and functions declarations                                    */
 /***************************************************************************/
 // Screen dimension constants
-const int SCREEN_WIDTH = 2048;
+const int SCREEN_WIDTH = 1000;
 const int SCREEN_HEIGHT = 1000;
 
 // Max number of forms : static allocation
@@ -66,13 +66,13 @@ int main(int argc, char* args[])
     {
         // Main loop flag
         bool quit = false;
-        Uint32 current_time, previous_time, elapsed_time;
+        Uint32 current_time, previous_time, elapsed_time, slowMotion = 15;
 
         // Event handler
         SDL_Event event;
 
         // Camera position
-        Point camera_position(0, 1.0, 10.0);
+        Point camera_position(0, 0.0, 00.0);
 
         // The forms to render
         Form* forms_list[MAX_FORMS_NUMBER];
@@ -96,12 +96,12 @@ int main(int argc, char* args[])
         }
         HitZone size = {10000};
         sol->getAnim().setSize(size);
-        Point rot(90, 0, 0);
+        Point rot(0, 0, 0);
         sol->getAnim().setRotation(rot); // Déplacez le nouvel objet brique
         Point pt(-size.rayon/2, 0, -size.rayon/2);
         sol->getAnim().setPos(pt); // Déplacez le nouvel objet brique
-        forms_list[number_of_forms] = sol; // Stockez le nouvel objet dans le tableau
-        number_of_forms++;
+        // forms_list[number_of_forms] = sol; // Stockez le nouvel objet dans le tableau
+        // number_of_forms++;
 
         // The forms to render
 
@@ -133,6 +133,12 @@ int main(int argc, char* args[])
                     case SDLK_q:
                     case SDLK_ESCAPE:
                         quit = true;
+                        break;
+                    case SDLK_s://slow motion
+                        slowMotion += 1;
+                        break;
+                    case SDLK_d://fast motion
+                        slowMotion -= 1;
                         break;
                     case SDLK_z://zoom
                         camera_position.z -= 1;
@@ -174,7 +180,7 @@ int main(int argc, char* args[])
             if (elapsed_time > ANIM_DELAY)
             {
                 previous_time = current_time;
-                update(forms_list, 1e-3 * elapsed_time); // International system units : seconds
+                update(forms_list, 1e-3 * elapsed_time/(slowMotion*1.)); // International system units : seconds
             }
 
             // Render the scene
@@ -314,13 +320,52 @@ bool initGL()
     return success;
 }
 
+float angleDeChuteObjet(float angle, float inclinaisionPlan) {
+    // Assurer que l'angle est positif entre 0 et 360 degrés
+    angle = fmod(angle, 360.);
+    if (angle < 0.) {angle += 360.;}
+    // Assigner un angle de chute approprié en fonction de l'angle donné
+    if (angle < 45. || angle > 315.) {angle = 0.;}
+    else if (angle >= 45. && angle < 135.) {angle = 90.;}
+    else if (angle >= 135. && angle < 225.) {angle = 180.;}
+    else {angle = 270.;}
+    return angle + inclinaisionPlan;//On ajout l'angle du plan
+}
+
+void angleDeChute(Point &rot, Point rotPlan, Point &posObjet, float rayonObjet){
+    //On doit potentiellement avancé la pos de l'objet par rapport à la correction en angle qu'on fait
+    //La rotation sur l'axe z influe sur la position en x
+    //La rotation sur l'axe x influe sur la position en z
+    float anglex = angleDeChuteObjet(rot.x, rotPlan.x);
+    // rot.y = angleDeChuteObjet(rot.y, rotPlan.y);//On laisse l'angle y inchangé
+    float anglez = angleDeChuteObjet(rot.z, rotPlan.z);
+
+    rayonObjet /= 2.;
+    float offesetx = (rayonObjet)*sin(rot.y*M_PI/180.), offesetz = (rayonObjet)*cos(rot.y*M_PI/180.);
+    if(anglez > rot.z){//Alors il faut avancer sur pos.x
+        posObjet.x = posObjet.x + offesetx;
+    }
+    else if(anglez < rot.z){
+        posObjet.x = posObjet.x - offesetx;
+    }
+    if(anglex > rot.x){//Alors il faut avancer sur pos.z
+        posObjet.z = posObjet.z + offesetz;
+    }
+    else if(anglex < rot.x){
+        posObjet.z = posObjet.z - offesetz;
+    }
+
+    rot = Point(anglex, rot.y, anglez);
+}
+
 void update(Form* formlist[MAX_FORMS_NUMBER], double delta_t) {
     // Position et taille du sol (assumées constantes)
     Point sizeSol(50, 0, 50); // Sol de taille 50 m x 0 m x 50 m
     Point posSol(-sizeSol.x / 2, 0, -sizeSol.z / 2); // Position du sol
+    Point rotSol(0,0,0);
 
     Plan planSol(Vector(1, 0, 0), Vector(0, 0, 1)); // Vecteurs pour le plan du sol
-    
+    planSol.normal = Vector(1, 0, 0) ^ Vector(0, 0, 1);
     // Mettre à jour la liste de formes
     unsigned short i = 0;
     while (formlist[i] != NULL) {
@@ -335,72 +380,40 @@ void update(Form* formlist[MAX_FORMS_NUMBER], double delta_t) {
                 Vector Fn = formlist[i]->getFn();
                 // Vérifiez la position de la brique par rapport au sol
 
-                // if (pos.y <= (posSol.y + sizeSol.y)){
-                //     // Collision détectée : ajustez la position et la Force de contre reaction de la brique sur le sol
-                //     pos.y = posSol.y + sizeSol.y;// + (formlist[i]->getAnim().getSize().y)/2;
-                //     // Vector force_contre_reaction(0.0, formlist[i]->g * masse, 0.0); // Force de contre reaction
-
-                //     Vector Fimpact(0.0, 0.0, 0.0);
-                //     //Fimpact = -masse * (VitesseFinale-VitesseInitial)/tempsDeColision   Le temps de collision est crucial car plus il est petit plus grande sera la force d'impact
-                //     //Donc pour simplifier on pourrait dire que le temps de collision est toujours egale à 0.01 s
-                //     Fimpact = -masse*formlist[i]->getAnim().getCoefRestitution()/0.01 * speed; //Doit prendre en compte l'angle l'objet pour faire un cos phi
-                //     Fn = Fimpact;
-                //     formlist[i]->setFn(Fn);
-                //     //speed.y = -1/masse *speed.y;//0;
-                //     //rot.z = 0;
-                //     formlist[i]->getAnim().setPos(pos);
-                //     // formlist[i]->getAnim().setRotation(rot);
-                //     // formlist[i]->getAnim().setSpeed(speed);
-                // }else{//Doit verifier la position de tous les autres objets et regarder si on les touches
-                //     //Si on ne touche aucun objet, soit chute libre, Fn est egale à 0
-                //     Fn.y = 0;
-                //     formlist[i]->setFn(Fn);
-                // }
-
-                // Vector v1(10, 0, 0);
-                // Vector v2(0, 0, 10);
-                // // Calculer le vecteur normal
-                // Vector n = v1 ^ v2;
                 Vector normal = planSol.normal;
-                float distancetoPlane = (normal.x * pos.x + normal.y * pos.y + normal.z * pos.z) / 
+                float distancetoPlane = (normal.x * pos.x + normal.y * pos.y + normal.z * pos.z) /
                                          sqrt(normal.x * normal.x + normal.y * normal.y + normal.z * normal.z);
 
-                // Définir le point C
-                // Point C(3, 4, 5);
-                // Calculer le produit scalaire
-                // double dotProduct = pos.x * n.x + pos.y * n.y + pos.z * n.z;
-                // Calculer la norme carrée de n
-                // double normSquared = n.x * n.x + n.y * n.y + n.z * n.z;
                 // Calculer les coordonnées de I
                 Point I = ((distancetoPlane* normal));
                 I = pos - I;
-                // double x_I = C.x - (dotProduct / normSquared) * n.x;
-                // double y_I = C.y - (dotProduct / normSquared) * n.y;
-                // double z_I = C.z - (dotProduct / normSquared) * n.z;
-                // Point I(x_I, y_I, z_I);
                 // std::cout << "Coordonnes de I: " << I << std::endl;
                 // // Calculer la distance entre C et I
                 float distanceCI = distance(pos, I);
 
-
-                
                 // Afficher les résultats
-                
+
                 // Définir le rayon de la sphère
                 // double radius = 2;
                 // Vérifier la collision
                 if (distanceCI < rayon) {
-                    std::cout << "Collision avec le plan." << std::endl;
-
+                    // std::cout << "Collision avec le plan." << std::endl;
+                    std::cout << "Coordonnes avant de pos: " << pos << std::endl;
                     // Correction de la position pour éviter l'interpénétration
                     Point correction = (rayon - distanceCI) * normal;
                     pos = pos - correction;
                     Vector Fimpact(0.0, 0.0, 0.0);
-                    Fimpact = masse/(0.02*formlist[i]->getAnim().getCoefRestitution()*2*sqrt(masse)) * speed; //Doit prendre en compte l'angle l'objet pour faire un cos phi
-                    
-                    Fn = -Fimpact;
+                    Fimpact = -masse/(0.02*2*sqrt(masse)) * speed; //Doit prendre en compte l'angle l'objet pour faire un cos phi
+
+                    Fn = Fimpact;
+
+                    angleDeChute(rot, rotSol, pos, rayon);
+
+                    printf("rot.x: %f, rot.y: %f, rot.z: %f\n", rot.x, rot.y, rot.z);
+
                     formlist[i]->setFn(Fn);
                     formlist[i]->getAnim().setPos(pos);
+                    formlist[i]->getAnim().setRotation(rot);
                     
                 } else {
                     // std::cout << "Pas de collision avec le plan." << std::endl;
@@ -414,6 +427,7 @@ void update(Form* formlist[MAX_FORMS_NUMBER], double delta_t) {
                 break;
         }
         formlist[i]->update(delta_t);
+        std::cout << "Coordonnes apres de pos: " << formlist[i]->getAnim().getPos() << std::endl;
         i++;
     }
 }
@@ -476,14 +490,22 @@ void setupMurDeBrique(Form* formlist[MAX_FORMS_NUMBER], unsigned short &number_o
     brique->getAnim().setMasse(60./1000);//12.8 kg
     brique->getAnim().setSize(size);
     printf("Size Objet : size rayon =  %2.1f\n", size.rayon);
-    Point pt(0, 1, 0);
-    Point rot(0.,0.,0.);//en degrees
+
+    Brique* newBrique = new Brique(*brique); // Créez un nouvel objet brique à chaque itération
+    newBrique->getAnim().setPos(Point(1,0,1));
+    newBrique->getAnim().setRotation(Point(0,0,0));
+    newBrique->setColor(WHITE);
+
+    Point pt(0, 2, 0);
+    Point rot(120.,  1,190);//en degrees
     brique->getAnim().setRotation(rot);
     brique->getAnim().setPos(pt); // Déplacez le nouvel objet brique
-    brique->getAnim().setSpeed(Vector(0, 0.0, 5.0));//Vitesse ou force initiale
-    brique->getAnim().setCoefRestitution(1);
+    brique->getAnim().setSpeed(Vector(0, 0.0, 0.0));//Vitesse ou force initiale
+    brique->getAnim().setCoefRestitution(0);
     // brique.set
     formlist[number_of_forms] = brique; // Stockez le nouvel objet dans le tableau
+    number_of_forms++;
+    formlist[number_of_forms] = newBrique; // Stockez le nouvel objet dans le tableau
     number_of_forms++;
 
     // for (int i = 0; i < largeur; i++) {

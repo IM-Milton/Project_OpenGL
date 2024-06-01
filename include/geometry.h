@@ -46,6 +46,9 @@ public:
     Vector integral(double delta_t);
     // Overloaded standard operators
     void operator+=(const Vector &v);
+
+    
+    double dot(const Vector& v) const;
     operator Point() const {
         return Point(x, y, z);
     }
@@ -64,6 +67,10 @@ Vector operator*(const double &k, const Vector &v);
 double operator*(const Vector &v1, const Vector &v2);
 // Vector product
 Vector operator^(const Vector &v1, const Vector &v2);
+
+Vector rotateAroundX(const Vector& v, double theta);
+Vector rotateAroundY(const Vector& v, double theta);
+Vector rotateAroundZ(const Vector& v, double theta);
 
 Point operator+(const Vector &v, Point &p);
 Point operator+(Point &p, const Vector &v);

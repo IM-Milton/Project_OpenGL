@@ -109,11 +109,11 @@ void Brique::update(double delta_t) {
     Point position = speed.integral(delta_t);
     anim.setPosRelative(position);
 
-    printf("accel : x:%3.2f y:%3.2f z:%3.2f  ;;  speed : x:%3.2f y:%3.2f z:%3.2f ;; position : x:%3.2f y:%3.2f z:%3.2f \n",
-                                        anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
-                                        anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
-                                        anim.getPos().x, anim.getPos().y, anim.getPos().z
-                                        );
+    // printf("accel : x:%3.2f y:%3.2f z:%3.2f  ;;  speed : x:%3.2f y:%3.2f z:%3.2f ;; position : x:%3.2f y:%3.2f z:%3.2f \n",
+    //                                     anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
+    //                                     anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
+    //                                     anim.getPos().x, anim.getPos().y, anim.getPos().z
+    //                                     );
 }
 
 void Sol::render() {
