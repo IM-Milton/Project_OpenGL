@@ -115,6 +115,7 @@ int main(int argc, char *args[])
         Point pt_spoon(41.3, 1.4, 5.5); //à re
         Point rot_spoon(90,140,0);
         createSTL(forms_list, number_of_forms, "Solidworks/catapulte_test.STL", pt_spoon,rot_spoon);
+        Point pt_trees(20,0,20;)
         // The forms to render
         // setupMurDeBrique(forms_list, number_of_forms);
         // Get first "current time"
