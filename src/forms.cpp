@@ -15,15 +15,15 @@ void Form::render()
     Point org = anim.getPos();
     Point rot = anim.getRotation();
 
-    
+
     glTranslated(org.x, org.y, org.z);
 
     glRotated(rot.x, 1.0, 0.0, 0.0); // Rotation autour de l'axe X
     glRotated(rot.y, 0.0, 1.0, 0.0); // Rotation autour de l'axe Y
     glRotated(rot.z, 0.0, 0.0, 1.0); // Rotation autour de l'axe Z
-    
+
     glColor3f(col.r, col.g, col.b);
-    
+
     // Render the form
     // Add your rendering code here
 }
@@ -122,7 +122,7 @@ bool Form::loadSTL(const std::string& path) {
 void Brique::render() {
     // Render the STL model
     Form::render();
-    
+
     if(!triangleSTL.size()){//Le stl n'a pas été chargée donc on doit dessiner à la main la brique
         //Alors on affiche une brique normal de base
         //Enzo doit faire une brique de 500/1000 de longeur, 200/1000 de largeur et 200/1000 de profondeur
@@ -152,7 +152,7 @@ void Brique::render() {
 }
 
 void Brique::update(double delta_t) {
-    // Calcul du PFD 
+    // Calcul du PFD
 
     Vector sumForce = getFg() + getFn();// + getFe;
     //Determination de l'acceleration à partir du PFD
@@ -163,9 +163,9 @@ void Brique::update(double delta_t) {
     //Intergrer pour avoir la vitesse
     Vector speed = anim.getSpeed() + anim.getAccel().integral(delta_t);//+v0;
     anim.setSpeed(speed);
-    
-    
-    
+
+
+
     // Mettez à jour la position en fonction de la vitesse et du temps
     // On intergre la vitesse pour obtenir le delta position qu'on vient rajouter à notre position actuelle
     // moveRelative(anim.getSpeed().integral(delta_t));
@@ -173,7 +173,7 @@ void Brique::update(double delta_t) {
     // moveRelative(position);
 
     // printf("accel : x:%1.2f y:%1.2f z:%1.2f  ;;  speed : x:%1.2f y:%1.2f z:%1.2f ;; position : x:%1.2f y:%1.2f z:%1.2f \n",
-    //                                     anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
+    //                                     anim.getAccel().x, anim.getAccel().y, anim.getAccel().z,
     //                                     anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
     //                                     anim.getPos().x, anim.getPos().y, anim.getPos().z
     //                                     );
@@ -182,9 +182,9 @@ void Brique::update(double delta_t) {
 void Sol::render() {
     // Render the STL model
     Form::render();
-    
+
     if(!triangleSTL.size()){//Le stl n'a pas été chargée donc on doit dessiner à la main la brique
-        //Alors on affiche une brique normal de base
+        //Alors on affiche une brique normal de basefff
         //Enzo doit faire une brique de 500/1000 de longeur, 200/1000 de largeur et 200/1000 de profondeur
         // printf("Triangle vide !! Doit donc dessiner la brique à la main %d\n");
             Form::render();
@@ -212,5 +212,5 @@ void Sol::render() {
 }
 
 void Sol::update(double delta_t) {
-    
+
 }
