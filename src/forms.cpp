@@ -3,7 +3,7 @@
 #include <GL/GLU.h>
 #include "forms.h"
 
-void Form::update(double delta_t)
+void Form::update(reel delta_t)
 {
     // Nothing to do here, animation update is done in child class method
 }
@@ -14,7 +14,11 @@ void Form::render()
     // Common for all Forms
     Point org = anim.getPos();
     Point rot = anim.getRotation();
-
+    if(getTypeForm() == BRIQUE){//Comme le point d'origine n'est pas le centre, on le fait à la main
+        org.x = org.x - anim.getSize().rayon;
+        org.y = org.y - anim.getSize().rayon;
+        org.z = org.z - anim.getSize().rayon;
+    }
     glTranslated(org.x, org.y, org.z);
 
     glRotated(rot.x, 1.0, 0.0, 0.0); // Rotation autour de l'axe X
@@ -89,14 +93,13 @@ void Brique::render() {
     }
 }
 
-void Brique::update(double delta_t) {
+void Brique::update(reel delta_t) {
     // Calcul du PFD 
-    
-    Vector sumForce = getFg() + getFn();
+    Vector sumForce = getFg() + getFn() ;
     //Determination de l'acceleration à partir du PFD
     //Somme des force = masse * acc
     //acc = Somme des force / masse
-    float masse = anim.getMasse();
+    reel masse = anim.getMasse();
     Vector acc(sumForce.x/masse, sumForce.y/masse, sumForce.z/masse);
     anim.setAccel(acc);
     //Intergrer pour avoir la vitesse
@@ -148,6 +151,16 @@ void Sol::render() {
     }
 }
 
-void Sol::update(double delta_t) {
+void Sol::update(reel delta_t) {
     
+}
+
+
+bool operator==(const Color &c1, const Color &c2)
+{
+    
+    if(c1.r == c2.r && c1.g == c2.g && c1.b == c2.b){
+        return true;
+    }
+    return false;
 }

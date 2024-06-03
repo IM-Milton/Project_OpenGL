@@ -15,14 +15,16 @@ Vector::Vector(Point p1, Point p2)
     z = p2.z - p1.z;
 }
 
-double Vector::norm()
+reel Vector::norm()
 {
-    double norm;
+    reel norm;
 
     norm = sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2));
 
     return norm;
 }
+
+
 
 /**
  * @brief Computes the dot product of the current vector with another vector.
@@ -38,11 +40,11 @@ double Vector::norm()
  * This method is useful for various applications such as calculating the angle between vectors,
  * checking for orthogonality, and performing vector projections.
  */
-double Vector::dot(const Vector& v) const {
+reel Vector::dot(const Vector& v) const {
     return x * v.x + y * v.y + z * v.z;
 }
 
-Vector Vector::integral(double delta_t)
+Vector Vector::integral(reel delta_t)
 {
     Vector res;
 
@@ -62,12 +64,13 @@ void Vector::operator+=(const Vector &v)
 
 
 
-double distance(Point p1, Point p2)
+reel distance(Point p1, Point p2)
 {
     Vector vect(p1, p2);
 
     return vect.norm();
 }
+
 
 // Overloaded standard operators
 std::ostream& operator<<(std::ostream& os, const Coordinates& coord)
@@ -107,7 +110,7 @@ Vector operator-(const Vector &v1, const Vector &v2)
     return res;
 }
 
-Vector operator*(const double &k, const Vector &v)
+Vector operator*(const reel &k, const Vector &v)
 {
     Vector res = v;
 
@@ -119,9 +122,9 @@ Vector operator*(const double &k, const Vector &v)
 }
 
 // Scalar product
-double operator*(const Vector &v1, const Vector &v2)
+reel operator*(const Vector &v1, const Vector &v2)
 {
-    double res;
+    reel res;
 
     res = v1.x * v2.x + v1.y * v2.y + v1.z * v2.z;
 
@@ -141,9 +144,9 @@ Vector operator^(const Vector &v1, const Vector &v2)
 }
 
 // Fonctions de rotation
-Vector rotateAroundX(const Vector& v, double theta) {
-    double cosTheta = cos(theta);
-    double sinTheta = sin(theta);
+Vector rotateAroundX(const Vector& v, reel theta) {
+    reel cosTheta = cos(theta);
+    reel sinTheta = sin(theta);
     return Vector(
         v.x,
         v.y * cosTheta - v.z * sinTheta,
@@ -151,9 +154,9 @@ Vector rotateAroundX(const Vector& v, double theta) {
     );
 }
 
-Vector rotateAroundY(const Vector& v, double theta) {
-    double cosTheta = cos(theta);
-    double sinTheta = sin(theta);
+Vector rotateAroundY(const Vector& v, reel theta) {
+    reel cosTheta = cos(theta);
+    reel sinTheta = sin(theta);
     return Vector(
         v.x * cosTheta + v.z * sinTheta,
         v.y,
@@ -161,9 +164,9 @@ Vector rotateAroundY(const Vector& v, double theta) {
     );
 }
 
-Vector rotateAroundZ(const Vector& v, double theta) {
-    double cosTheta = cos(theta);
-    double sinTheta = sin(theta);
+Vector rotateAroundZ(const Vector& v, reel theta) {
+    reel cosTheta = cos(theta);
+    reel sinTheta = sin(theta);
     return Vector(
         v.x * cosTheta - v.y * sinTheta,
         v.x * sinTheta + v.y * cosTheta,
@@ -196,3 +199,10 @@ Point operator-(Point &p, const Vector &v){
     return res;
 }
 
+// Point operator+(Point &p1, Point &p2) {
+//     return Point(p1.x + p2.x, p1.y + p2.y, p1.z + p2.z);
+// }
+    
+// Point operator-(Point &p1, Point &p2) {
+//     return Point(p1.x - p2.x, p1.y - p2.y, p1.z - p2.z);
+// }

@@ -24,9 +24,11 @@ enum SHAPE_ID{
 class Color
 {
 public:
-    float r, g, b;
-    Color(float rr = 1.0f, float gg = 1.0f, float bb = 1.0f) {r=rr; g=gg; b=bb;}
+    reel r, g, b;
+    Color(reel rr = 1.0f, reel gg = 1.0f, reel bb = 1.0f) {r=rr; g=gg; b=bb;}
+
 };
+bool operator==(const Color &c1, const Color &c2);
 
 // Constant Colors
 const Color RED(1.0f, 0.0f, 0.0f);
@@ -54,6 +56,7 @@ protected:
     SHAPE_ID _id;
 
     //Partie Physique : ------------------------------------------------
+    bool physique = true;//Activer la physique ou non sur cette objet
     Vector _Fn;
     Plan plan;
     //Partie Physique Fin -----------------------------------------------
@@ -64,6 +67,9 @@ public:
     void setID(SHAPE_ID id) {_id = id;}
     SHAPE_ID getTypeForm() {return _id;}
 
+    void setPhysics(bool activer = true){physique = activer;}
+    bool getPhysics() {return physique;}
+
     Plan& getPlan() {return plan;}//Utiliser si la form est un plan, comme le sol
     void setPlan(Plan pl){plan = pl;}
 
@@ -73,7 +79,7 @@ public:
     // It has to be done in each inherited class, otherwise all forms will have the same movements !
     // Virtual method for dynamic function call
     // Pure virtual to ensure all objects have their physics implemented
-    virtual void update(double delta_t) = 0;
+    virtual void update(reel delta_t) = 0;
     // Virtual method : Form is a generic type, only setting color and reference position
     virtual void render();
 
@@ -84,13 +90,14 @@ public:
         tr = triangleSTL;
     }
     void setColor(Color cl) {col = cl;}
+    Color& getColor() {return col;}
 
     //Partie Physique : ------------------------------------------------
-    const float g = 9.81; // Accélération gravitationnelle en m/s^2
+    const reel g = 9.81; // Accélération gravitationnelle en m/s^2
 
     Vector getFg(){
         //Doit dependre de la position de l'objet, sa rotation etc
-        Vector Fg(0.0, -1*anim.getMasse()*g, 0.0); // Force de gravité dirigée vers le bas
+        Vector Fg(0.0, -anim.getMasse()*g, 0.0); // Force de gravité dirigée vers le bas
         return Fg;
     }
     //force perpendiculaire à la surface du sol qui empêche l'objet de passer à travers le sol.
@@ -113,7 +120,7 @@ public:
 class Brique : public Form
 {
 public:
-    Brique(Color cl = Color(), float masse = 18.4, HitZone size = {200}){
+    Brique(Color cl = Color(), reel masse = 18.4, HitZone size = {200}){
         setID(BRIQUE);
         col = cl;
         anim.setMasse(masse);//En kg
@@ -122,7 +129,7 @@ public:
     }
 
     void render();
-    void update(double delta_t);
+    void update(reel delta_t);
 };
 
 class Sol : public Form
@@ -138,6 +145,6 @@ public:
         setPlan(plan);
     }
     void render();
-    void update(double delta_t);
+    void update(reel delta_t);
 };
 #endif // FORMS_H_INCLUDED
