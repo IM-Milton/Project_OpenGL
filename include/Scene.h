@@ -14,6 +14,15 @@
 #include "config.h"
 #include "forms.h"
 
+
+struct sceneInput
+{
+    bool launch,pause,increaseRope,decreaseRope,rotateLeft,rotateRight,reset,quit,space_up;
+
+};
+
+
+
 class Scene
 {
 private:
@@ -25,7 +34,7 @@ private:
     Point camera_position;
     SDL_Window* gWindow ;
     SDL_GLContext gContext;
-
+    float timeSlow = 2.0f;
     bool quit=true;
     bool _initGL();
     bool _initWindow(SDL_Window** window, SDL_GLContext* context);
@@ -33,11 +42,22 @@ private:
     char checkInput();
     bool _useSDL=false;
     void close(SDL_Window** window);
-    void checkCollision(int &formIndex, Point &pos, Point &rot, Vector &Fn);
+    void checkCollision(int &formIndex, Point &pos, Point &rot, Vector &Fn, reel delta_t);
 
     void setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col);
 
+
+
+
 public:
+
+
+
+
+
+    sceneInput input = {false,false,false,false,false,false,false,false,false};
+
+
     Scene();
 
     bool init();

@@ -8,7 +8,8 @@ enum SHAPE_ID{
     BRIQUE,
     CATAPULTE_CHASSIS,
     PLAN,
-    STATIC
+    STATIC,
+    SPHERE
 };
 
 class Color

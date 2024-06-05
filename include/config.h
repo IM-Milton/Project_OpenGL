@@ -9,7 +9,7 @@
 
 const int SCREEN_WIDTH = 1000;
 const int SCREEN_HEIGHT = 1000;
-
+const int KILL_DISTANCE = 50;
 // Max number of forms : static allocation
 const int MAX_FORMS_NUMBER = 2000;
 

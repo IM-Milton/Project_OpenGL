@@ -120,6 +120,29 @@ public:
     void update(reel delta_t);
 };
 
+
+class Sphere : public Form
+{
+public:
+    Sphere(Color cl = Color(), reel masse = 18.4, HitZone size = {200}, char* url = NULL) {
+        anim.setTypeForm(SPHERE);
+        anim.setColor(cl);
+        anim.setSpeedRotation(0);
+        anim.setMasse(masse);//En kg
+        anim.setSize(size);
+        setFn(Vector(0.0, 0.0, 0.0));
+        if(url!=NULL)
+        {
+            modelSTL = ModelSTL();
+            modelSTL.loadSTL(url);
+            // anim.setPos(anim.getPos());
+            // anim.setRotation(anim.getRotation());
+        }
+    }
+    void render();
+    void update(reel delta_t);
+};
+
 class PlanForm : public Form
 {
 public:

@@ -65,9 +65,9 @@ void Form::render()
     glRotated(rot.x, 1.0, 0.0, 0.0); // Rotation autour de l'axe X
     glRotated(rot.y, 0.0, 1.0, 0.0); // Rotation autour de l'axe Y
     glRotated(rot.z, 0.0, 0.0, 1.0); // Rotation autour de l'axe Z
-    
+
     glColor3f(anim.getColor().r, anim.getColor().g, anim.getColor().b);
-    
+
     // Render the form
     // Add your rendering code here
 }
@@ -76,7 +76,7 @@ void Form::physique(reel delta_t){
     static reel masse, alpha = 0.01;
     static Vector sumForce, acc, speed, speedRot;
     static Point position;
-    // Calcul du PFD 
+    // Calcul du PFD
     sumForce = getFg() + getFn() ;
     //Determination de l'acceleration à partir du PFD
     //Somme des force = masse * acc
@@ -88,7 +88,7 @@ void Form::physique(reel delta_t){
     speed = anim.getSpeed() + anim.getAccel().integral(delta_t);//+v0;
     anim.setSpeed(speed);
 
-    
+
     // Mettez à jour la position en fonction de la vitesse et du temps
     // On intergre la vitesse pour obtenir le delta position qu'on vient rajouter à notre position actuelle
     // anim.setPosRelative(anim.getSpeed().integral(delta_t));
@@ -102,7 +102,7 @@ void Form::physique(reel delta_t){
     anim.setSpeedRotation(speedRot);
     anim.setRotRelative(speedRot.integral(delta_t));
     // printf("accel : x:%3.2f y:%3.2f z:%3.2f  ;;  speed : x:%3.2f y:%3.2f z:%3.2f ;; position : x:%3.2f y:%3.2f z:%3.2f \n",
-    //                                     anim.getAccel().x, anim.getAccel().y, anim.getAccel().z, 
+    //                                     anim.getAccel().x, anim.getAccel().y, anim.getAccel().z,
     //                                     anim.getSpeed().x, anim.getSpeed().y, anim.getSpeed().z,
     //                                     anim.getPos().x, anim.getPos().y, anim.getPos().z
     //                                     );
@@ -118,7 +118,7 @@ void Brique::update(reel delta_t) {
 
     // Alors concerné par la physique
     physique(delta_t);
-    
+
 }
 
 void Brique::render() {
@@ -131,14 +131,45 @@ void Brique::render() {
             // Form::render();
             glBegin(GL_QUADS);
             {
-                glVertex3d(0, 1, 0);
-                glVertex3d(1, 1, 0);
-                glVertex3d(1, 1, 1);
-                glVertex3d(0, 1, 1);
+                // glVertex3d(0, 1, 0);
+                // glVertex3d(1, 1, 0);
+                // glVertex3d(1, 1, 1);
+                // glVertex3d(0, 1, 1);
             }
             glEnd();
     }else{
-        modelSTL.setAnim(anim);//Anim pas utilisé pour le moment dans modelSTL, mais servirais 
+        modelSTL.setAnim(anim);//Anim pas utilisé pour le moment dans modelSTL, mais servirais
+        modelSTL.render();
+    }
+}
+
+
+void Sphere::update(reel delta_t) {
+    if (!getPhysics()){
+        anim.setAccel(0);
+        anim.setSpeed(0);
+        return;
+    }
+
+    // Alors concerné par la physique
+    physique(delta_t);
+
+}
+
+void Sphere::render() {
+    // Render the STL model
+    Form::render();
+    if(!modelSTL.isLoaded()){//Le stl n'a pas été chargée donc on doit dessiner à la main la brique
+        //Alors on affiche une brique normal de base
+        //Enzo doit faire une brique de 500/1000 de longeur, 200/1000 de largeur et 200/1000 de profondeur
+        // printf("Triangle vide !! Doit donc dessiner la brique à la main %d\n");
+            // Form::render();
+            GLUquadric *quadric = gluNewQuadric();
+            gluSphere(quadric,getAnim().getSize().rayon,18,8);
+            gluDeleteQuadric(quadric);
+            glEnd();
+    }else{
+        modelSTL.setAnim(anim);//Anim pas utilisé pour le moment dans modelSTL, mais servirais
         modelSTL.render();
     }
 }
