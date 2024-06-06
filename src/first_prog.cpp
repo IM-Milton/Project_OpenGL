@@ -1,6 +1,7 @@
 // Using SDL, SDL OpenGL and standard IO
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
+#include <SDL2/SDL_image.h>
 #include <GL/GLU.h>
 #include <iostream>
 #include <vector>
@@ -45,9 +46,55 @@ void setupMurDeBrique(Form *formlist[MAX_FORMS_NUMBER], unsigned short &number_o
 // Frees media and shuts down SDL
 void close(SDL_Window **window);
 
-void createSTL(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_forms, const std::string &path, Point pt,Point rotation)
+int createTextureFromImage (const char* filename, GLuint* textureID)
 {
-    Sol *sol = new Sol(GREEN); // Créez un nouvel objet de brique en dehors de la boucle
+    SDL_Surface *imgSurface = IMG_Load(filename);
+    if (imgSurface == NULL)
+    {
+        std::cerr << "Failed to load texture image: " << filename << std::endl;
+        return -1;
+    }
+    else
+    {
+        // Work out what format to tell glTexImage2D to use...
+        int mode;
+        if (imgSurface->format->BytesPerPixel == 3)   // RGB 24bit
+        {
+            mode = GL_RGB;
+        }
+        else if (imgSurface->format->BytesPerPixel == 4)     // RGBA 32bit
+        {
+            mode = GL_RGBA;
+        }
+        else
+        {
+            SDL_FreeSurface(imgSurface);
+            std::cerr << "Unable to detect the image color format of: " << filename << std::endl;
+            return -2;
+        }
+        // create one texture name
+        glGenTextures(1, textureID);
+
+        // tell opengl to use the generated texture name
+        glBindTexture(GL_TEXTURE_2D, *textureID);
+
+        // this reads from the sdl imgSurface and puts it into an openGL texture
+        glTexImage2D(GL_TEXTURE_2D, 0, mode, imgSurface->w, imgSurface->h, 0, mode, GL_UNSIGNED_BYTE, imgSurface->pixels);
+
+        // these affect how this texture is drawn later on...
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+
+        // clean up
+        SDL_FreeSurface(imgSurface);
+        return 0;
+    }
+}
+
+
+void createSTL(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_forms, const std::string &path, Point pt,Point rotation, GLuint textureid_1, Color Couleur)
+{
+    Sol *sol = new Sol(Couleur); // Créez un nouvel objet de brique en dehors de la boucle
     if (!sol->loadSTL(path))
     {
         printf("Failed to load STL model!\n");
@@ -55,6 +102,8 @@ void createSTL(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_for
     }
     sol->moveAbsolue(pt);
     sol->getAnim().setRotation(rotation); // Déplacez le nouvel objet brique
+    sol->setTexture(textureid_1);
+
     forms_list[number_of_forms] = sol; // Stockez le nouvel objet dans le tableau
     number_of_forms++;
 }
@@ -70,6 +119,9 @@ int main(int argc, char *args[])
     float TranslateX;
     float TranslateZ;
     float angle_lancement = 10;
+    GLuint textureid_1, textureid_2;
+   createTextureFromImage("resources/images/earth_texture.jpg", &textureid_1);
+   createTextureFromImage("resources/images/tiles.bmp", &textureid_2);
     // OpenGL context
     SDL_GLContext gContext;
     printf("Hello World\n");
@@ -101,21 +153,28 @@ int main(int argc, char *args[])
 
         // Create here specific forms and add them to the list...
         // Don't forget to update the actual number_of_forms !
-        // Cube *pFace = NULL;
-        // pFace = new Cube(Vector(1,0,0), Vector(0,1,0), Point(-0.5, -0.5, -0.5), 1, 1, ORANGE);
-        // forms_list[number_of_forms] = pFace;
-        // number_of_forms++;
+         Cube *pFace = NULL;
+         pFace = new Cube(Vector(1,0,0), Vector(0,1,0), Point(-0.5, -0.5, -0.5), 100, 100, ORANGE);
+         forms_list[number_of_forms] = pFace;
+         number_of_forms++;
 
         Point pt_chateau(0, 0, 0);
         Point rotation_chateau(0,-90,0);
-        createSTL(forms_list, number_of_forms, "Solidworks/chateau.STL", pt_chateau,rotation_chateau);
+        createSTL(forms_list, number_of_forms, "Solidworks/chateau.STL", pt_chateau,rotation_chateau,textureid_1,GREY);
         Point rotation_catapulte(0,90,0);
         Point pt_catapulte(40, 0, 6.5);
-        createSTL(forms_list, number_of_forms, "Solidworks/Catapulte_ASSEMBLY_without_sppon.STL", pt_catapulte,rotation_catapulte);
+        createSTL(forms_list, number_of_forms, "Solidworks/Catapulte_ASSEMBLY_without_sppon.STL", pt_catapulte,rotation_catapulte,textureid_1,ORANGE);
         Point pt_spoon(41.3, 1.4, 5.5); //à re
-        Point rot_spoon(90,140,0);
-        createSTL(forms_list, number_of_forms, "Solidworks/catapulte_test.STL", pt_spoon,rot_spoon);
-        Point pt_trees(20,0,20;)
+        Point rot_spoon(90,90,0);
+        createSTL(forms_list, number_of_forms, "Solidworks/catapulte_test.STL", pt_spoon,rot_spoon,textureid_1,RED);
+        Point pt_trunk(10, 0, 10); //à re
+        Point rot_trunk(-90,0,0);
+        createSTL(forms_list, number_of_forms, "Solidworks/trunk_V2Plan.STL", pt_trunk,rot_trunk,textureid_1,BROWN);
+        Point pt_Leaf(10, 0, 10); 
+        Point rot_Leaf(10, 1, 10); 
+        createSTL(forms_list, number_of_forms, "Solidworks/Leaf_V2.STL", pt_Leaf,rot_Leaf,textureid_1,BLACKGREEN);
+        
+       // Point pt_trees(20,0,20;)
         // The forms to render
         // setupMurDeBrique(forms_list, number_of_forms);
         // Get first "current time"
@@ -163,10 +222,10 @@ int main(int argc, char *args[])
                         printf("Down\n");
                         break;
                     case SDLK_q:
-                        TranslateX--;
+                        TranslateX++;
                         break;
                     case SDLK_d:
-                        TranslateX++;
+                        TranslateX--;
                         printf("D\n");
                         break;
                     case SDLK_z:
@@ -293,7 +352,7 @@ bool initGL()
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
     // Fix aspect ratio and depth clipping planes
-    gluPerspective(40.0, (GLdouble)SCREEN_WIDTH / SCREEN_HEIGHT, 1.0, 100.0);
+    gluPerspective(40.0, (GLdouble)SCREEN_WIDTH / SCREEN_HEIGHT, 1.0, 3000.0);
 
     // Initialize Modelview Matrix
     glMatrixMode(GL_MODELVIEW);

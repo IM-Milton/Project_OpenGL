@@ -37,7 +37,11 @@ const Color BLUE(0.0f, 0.0f, 1.0f);
 const Color GREEN(0.0f, 1.0f, 0.0f);
 const Color YELLOW(1.0f, 1.0f, 0.0f);
 const Color WHITE(1.0f, 1.0f, 1.0f);
-const Color ORANGE(1.0f, 0.65f, 0.0f);
+const Color GREY(0.65f, 0.65f, 0.65f);
+const Color BROWN(0.81f, 0.64f, 0.42f);
+const Color BLACKGREEN(0.0f, 0.3f, 0.f);
+const Color ORANGE(.0f, 0.65f, 0.0f);
+
 
 struct Vertex {
     float x, y, z;
@@ -90,18 +94,18 @@ public:
     void getTriangles(std::vector<Triangle>& tr){
         tr = triangleSTL;
     }
-    void setColor(Color cl) {col = cl;} 
+    void setColor(Color cl) {col = cl;}
 
     //Partie Physique : ------------------------------------------------
     const float g = 9.81; // Accélération gravitationnelle en m/s^2
 
     void setMasse(float kg) {_masse = kg;}
     //En kg
-    float getMasse(){return _masse;} 
+    float getMasse(){return _masse;}
 
     Vector getFg(){
         //Doit dependre de la position de l'objet, sa rotation etc
-        Vector Fg(0.0, -1*getMasse()*g, 0.0); // Force de gravité dirigée vers le bas 
+        Vector Fg(0.0, -1*getMasse()*g, 0.0); // Force de gravité dirigée vers le bas
         return Fg;
     }
 
@@ -143,7 +147,7 @@ public:
     Cube(Vector v1 = Vector(1,0,0), Vector v2 = Vector(0,0,1),
           Point org = Point(), double l = 1.0, double w = 1.0,
           Color cl = Color());
-    
+
 
 
     void update(double delta_t);
@@ -180,6 +184,7 @@ class Sol : public Form
 {
 private:
     Point _sizeObjet;//La place que prend l'objet dans les trois axes
+    GLuint texture_id;
 public:
     Sol(Color cl = Color()) {
         setID(SOL);
@@ -189,6 +194,8 @@ public:
      void setSize(const Point size) {//La place que prend l'objet dans les trois axes
         _sizeObjet = size;
     }
+    void setTexture(GLuint textureid) {texture_id = textureid;}
+
     void render();
     void update(double delta_t);
 };

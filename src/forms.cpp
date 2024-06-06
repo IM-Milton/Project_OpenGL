@@ -141,7 +141,7 @@ void Brique::render() {
         glBegin(GL_TRIANGLES);
         int nbTriangles = 0;
         for (const auto& tri : triangleSTL) {
-            glNormal3f(tri.normal.x, tri.normal.y, tri.normal.z);
+                        glNormal3f(tri.normal.x, tri.normal.y, tri.normal.z);
             for (const auto& vert : tri.vertices) {
                 glVertex3f(vert.x, vert.y, vert.z);
             }
@@ -180,8 +180,13 @@ void Brique::update(double delta_t) {
 }
 
 void Sol::render() {
+
+
     // Render the STL model
     Form::render();
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, texture_id);
+
 
     if(!triangleSTL.size()){//Le stl n'a pas été chargée donc on doit dessiner à la main la brique
         //Alors on affiche une brique normal de basefff
