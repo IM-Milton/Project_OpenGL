@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xstring": "cpp",
+			"vector": "cpp",
+			"exception": "cpp",
+			"fstream": "cpp",
+			"istream": "cpp",
+			"memory": "cpp",
+			"ostream": "cpp",
+			"streambuf": "cpp",
+			"system_error": "cpp",
+			"tuple": "cpp",
+			"utility": "cpp",
+			"xlocale": "cpp",
+			"xlocinfo": "cpp",
+			"xutility": "cpp"
+		}
+	}
+}

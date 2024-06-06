@@ -48,7 +48,7 @@ protected:
     Animation anim;
 
     //Partie Physique : ------------------------------------------------
-    bool etatPhysique = true;//Activer la physique ou non sur cette objet
+    bool etatPhysique = true, etatEffetCollision = true;//Activer la physique ou non sur cette objet
     Vector _Fn;
     Plan plan;
     //Partie Physique Fin -----------------------------------------------
@@ -59,6 +59,9 @@ public:
 
     void setPhysics(bool activer = true){etatPhysique = activer;}
     bool getPhysics() {return etatPhysique;}
+
+    void setCollisionEffect(bool activer = true){etatEffetCollision = activer;}
+    bool getCollisionEffect() {return etatEffetCollision;}
 
     Plan& getPlan() {return plan;}//Utiliser si la form est un plan, comme le sol
     void setPlan(Plan pl){plan = pl;}
@@ -107,7 +110,7 @@ public:
         anim.setSpeedRotation(0);
         anim.setMasse(masse);//En kg
         anim.setSize(size);
-        setFn(Vector(0.0, 0.0, 0.0));
+        setFn(Vector(0.0, 1*anim.getMasse()*g, 0.0));
         if(url!=NULL)
         {
             modelSTL = ModelSTL();

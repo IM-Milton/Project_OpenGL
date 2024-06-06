@@ -17,7 +17,7 @@
 
 struct sceneInput
 {
-    bool launch,pause,increaseRope,decreaseRope,rotateLeft,rotateRight,reset,quit,space_up;
+    bool launch,space_down,increaseRope,decreaseRope,rotateLeft,rotateRight,reset,quit,space_up;
 
 };
 
@@ -32,7 +32,7 @@ private:
     Uint32 current_time, previous_time, elapsed_time;
     SDL_Event event;
     Point camera_position;
-    SDL_Window* gWindow ;
+    SDL_Window* gWindow =NULL;
     SDL_GLContext gContext;
     float timeSlow = 2.0f;
     bool quit=true;
@@ -46,6 +46,8 @@ private:
 
     void setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col);
 
+    
+
 
 
 
@@ -56,7 +58,7 @@ public:
 
 
     sceneInput input = {false,false,false,false,false,false,false,false,false};
-
+    bool _pause = false;
 
     Scene();
 

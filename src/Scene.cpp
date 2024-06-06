@@ -4,28 +4,40 @@
 
 Scene::Scene()
 {
-    gWindow = NULL;
-    formIndex =0;
-    camera_position=Point(0, 1.0, 20.0);
+
+    if( !_initWindow(&gWindow, &gContext))
+    {// Start up SDL and create window
+        std::cerr << "Failed to initialize!" << std::endl;
+    }
     for (int i=0; i<MAX_FORMS_NUMBER; i++)
     {
         formlist[i] = NULL;
     }
+
 }
 
 bool Scene::init()
 {
-    // Start up SDL and create window
-    if( !_initWindow(&gWindow, &gContext))
+
+    for (int i=0; i<MAX_FORMS_NUMBER; i++)
     {
-        std::cerr << "Failed to initialize!" << std::endl;
+        if(formlist[i] != NULL){
+            delete formlist[i] ;
+            formlist[i] = NULL;
+        }
     }
-    else
-    {
-        quit=false;
-        setupObjects();
-    }
+
+    formIndex =0;
+
+
+    camera_position=Point(0, 1.0, 20.0);
+
+    quit=false;
+    setupObjects();
+
 }
+
+
 
 bool Scene::setupObjects() // Initialisation des objets
 {
@@ -59,11 +71,15 @@ bool Scene::setupObjects() // Initialisation des objets
         sol->getAnim().setPos(pt); // Déplacez le nouvel objet brique
         sol->setPhysics(false);
     addForm(sol);
-    Sphere *sphere = new Sphere(YELLOW,200,{0.5},"");
-    sphere->getAnim().setPos(Point(1,0,15));
+    Sphere *sphere = new Sphere(YELLOW,200,{0.5});
+    sphere->getAnim().setPos(Point(1.5,0,15));
     sphere->getAnim().setSpeed(Vector(0, 0, -10.0));
     sphere->getAnim().setSpeedRotation(Vector(0, 360*100, 0.0));
+    Sphere* newS = new Sphere(*sphere);
+    newS->getAnim().setPos(Point(0.5,0,15+2));
+    // sphere->setCollisionEffect(false);
     addForm(sphere);
+    addForm(newS);
     staticForm *chateau = new staticForm(RED, Point(0, 0, 0), Point(0, 180, 0), "Solidworks/chateau.STL");
     if (!chateau->modelSTL.isLoaded()){
         printf("Failed to load chateau.STL model!\n");
@@ -72,6 +88,11 @@ bool Scene::setupObjects() // Initialisation des objets
     // addForm(chateau);
 
     setupMurDeBrique(10,6, Point(13.65,0,0),RED);
+
+    if(USE_STL)
+    {
+        printf("afficher les STL");
+    }
 
 }
 
@@ -87,14 +108,14 @@ void Scene::setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col
     brique->getAnim().setMasse(12.8); // 12.8 kg
     brique->getAnim().setSize(size);
     brique->getAnim().setCoefRestitution(0.2);
-    brique->getAnim().setSpeedRotation(Vector(0, 360*10, 0.0));
+    //brique->getAnim().setSpeedRotation(Vector(0, 360*10, 0.0));
     printf("Size Objet : size rayon =  %2.1f\n", size.rayon);
 
     Brique* newB = new Brique(*brique); // Créez un nouvel objet brique à chaque itération
-    newB->getAnim().setPos(Point(10.5,0,10));
+    newB->getAnim().setPos(Point(-1,5,0));
     newB->getAnim().setRotation(Point(30.,0,0));
     newB->setPhysics();
-    newB->getAnim().setSpeed(Vector(-10.0, 5.0, -10.0));
+    // newB->getAnim().setSpeed(Vector(-10.0, 5.0, -10.0));
     // newB->getAnim().setSpeedRotation(Vector(0, 360*10, 0.0));
     newB->getAnim().setSize(size);
     newB->getAnim().setColor(WHITE);
@@ -109,7 +130,7 @@ void Scene::setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col
     // // brique.set
     // addForm(brique);
 
-    //addForm(newB);
+    addForm(newB);
 
     for (int i = 0; i < largeur; i++) {
         for (int j = 0; j < Longeur; j++) {
@@ -364,12 +385,12 @@ void Scene::checkCollision(int &formIndex, Point &pos, Point &rot, Vector &Fn, r
                     comp_speed_2 = speedObs * normal;
 
                     speed = comp_speed_1 * normal + comp_speed_2 * normal - e * (speed * normal) * normal;
-                    
+
                     speed =  speed - formlist[formIndex]->getAnim().getSpeed() ;
                     // formlist[formIndex]->getAnim().setSpeed(speed);
                     Vector acc = (1./delta_t *speed);
                     Vector Fn = formlist[formIndex]->getFn() + acc*formlist[formIndex]->getAnim().getMasse();
-                    formlist[formIndex]->setFn(Fn);
+                    //formlist[formIndex]->setFn(Fn);
 
                     angleDeChute(rot, rotObs, pos, rayon);
                     nbObstacle++;
@@ -402,7 +423,11 @@ void Scene::checkCollision(int &formIndex, Point &pos, Point &rot, Vector &Fn, r
                     }
                 }
 
-                if (SATCollision(vertices1, vertices2, axes)) { 
+                if (SATCollision(vertices1, vertices2, axes)) {
+
+
+                    formlist[formIndex]->getAnim().setColor(ORANGE);
+
                     static Vector normal, v1, v2;
                     static reel dist, comp1, comp2, comp_speed_1, comp_speed_2;
                     // printf("Collision\n");
@@ -420,26 +445,23 @@ void Scene::checkCollision(int &formIndex, Point &pos, Point &rot, Vector &Fn, r
                     comp1 = vector_pos * v1;
                     comp2 = vector_pos * v2;
                     vector_pos = ((rayon + rayonObs) - dist) * normal + comp1 * v1 + comp2 * v2;// + halfSize1 * normal ;
-                    formlist[formIndex]->getAnim().setPos(vector_pos );
-                    pos = formlist[formIndex]->getAnim().getPos();
 
-                    Fn.y = masse * formlist[formIndex]->g;
+                    if(formlist[i]->getCollisionEffect())
+                    {
+                        formlist[formIndex]->getAnim().setPos(vector_pos );
+                        pos = formlist[formIndex]->getAnim().getPos();
 
+                        Fn.y = masse * formlist[formIndex]->g;
+                        // formlist[formIndex]->getAnim().setSpeed(0);
+                        comp_speed_1 = 10*speed * normal;
+                        comp_speed_2 = 10*speedObs * normal;
 
-                    // formlist[formIndex]->getAnim().setSpeed(0);
+                        speed = comp_speed_1 * normal + comp_speed_2 * normal - e * (speed * normal) * normal;
+                        formlist[formIndex]->getAnim().setSpeed(speed);
+                        angleDeChute(rot, rotObs, pos, rayon);
+                    }
 
-
-                    // normal.normalize();
-
-                    comp_speed_1 = 10*speed * normal;
-                    comp_speed_2 = 10*speedObs * normal;
-
-                    speed = comp_speed_1 * normal + comp_speed_2 * normal - e * (speed * normal) * normal;
-                    formlist[formIndex]->getAnim().setSpeed(speed);
-
-                    formlist[formIndex]->getAnim().setColor(ORANGE);
                     sphereDetected=true;
-                    angleDeChute(rot, rotObs, pos, rayon);
                     nbObstacle++;
                 }
             }
@@ -471,9 +493,9 @@ void Scene::update(reel delta_t){
     // }
 
     i = 0;
-    if(input.pause)
+    if(_pause)
     {
-        printf("on est en pause: %d\n",input.space_up);
+        //printf("on est en pause: %d\n",inpu);
         return;
     }
     while (formlist[i] != NULL) {
@@ -616,6 +638,7 @@ bool Scene::addForm(Form *form)
 
 char Scene::checkInput()
 {
+    static int nbSpaces = 0;
 // Handle events on queue
     while(SDL_PollEvent(& event) != 0)
     {
@@ -639,13 +662,30 @@ char Scene::checkInput()
                         quit = true;
                         break;
                     case SDLK_z://zoom
+                    {
+
+                    
                         camera_position.z -= 1;
+
+                        int i=0;
+                        while (formlist[i]!=NULL) 
+                        {
+                            // Brique* newBrique = new Brique(*brique); // Créez un nouvel objet brique à chaque itération
+                            if(formlist[i]->getAnim().getTypeForm() == SPHERE)
+                            {
+                                bool state =  formlist[i]->getCollisionEffect();
+                                formlist[i]->setCollisionEffect(!state);
+                            }
+                            i++;
+                        }
                         break;
+                    }
                     case SDLK_e:
                         camera_position.z += 1;
                     break;
                     case SDLK_r://restart
-
+                        input.reset = true;
+                        init();
                         break;
                     case SDLK_LEFT:
                         camera_position.x -= 1;
@@ -664,9 +704,34 @@ char Scene::checkInput()
                       printf("Down\n");
                     break;
 
+
                     case SDLK_SPACE:
-                        
+                        input.space_down = true;
+                        if(nbSpaces == 0 || nbSpaces == 2)
+                        {
+                            nbSpaces++;
+                        }
+
+
+                        printf("pause down\n");
                         break;
+
+                    default:
+                        break;
+                    }
+
+                    break;
+
+                case SDL_KEYUP:
+                    switch (key_pressed)
+                    {
+                    case SDLK_SPACE:
+                        input.space_up = true;
+                        nbSpaces ++;
+
+
+                        printf("pause up\n");
+
                     default:
                         break;
                     }
@@ -674,7 +739,22 @@ char Scene::checkInput()
                 default:
                     break;
                 }
+
     }
+
+
+
+    if(nbSpaces>=4){
+        _pause = false;
+        nbSpaces = 0;
+    }else if (nbSpaces>=1)
+    {
+        _pause = true;
+    }
+
+
+
+
     if(input.decreaseRope)
     {
         //Diminue la force de la corde.
@@ -687,14 +767,10 @@ char Scene::checkInput()
     {
         //Fais le lancement de la boule.
     }
-    if(input.pause)
-    {
-        //Met le jeu en pause
-    }
-
     if(input.reset)
     {
         //reset le jeu.
+
     }
     if(input.quit)
     {

@@ -18,4 +18,7 @@ const /*Uint32*/int ANIM_DELAY = 1;
 
 const int PHYSIQS_DELAY =1;
 
+
+const bool USE_STL = true;
+
 #endif
