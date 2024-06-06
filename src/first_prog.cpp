@@ -37,7 +37,7 @@ bool initGL();
 void update(Form *formlist[MAX_FORMS_NUMBER], double delta_t);
 
 // Renders scene to the screen
-void render(Form *formlist[MAX_FORMS_NUMBER], const Point &cam_pos, float angleAlphaY, float TranslateX,float TranslateZ);
+void render(Form *formlist[MAX_FORMS_NUMBER], const Point &cam_pos, float angleAlphaY, float TranslateX, float TranslateZ);
 
 // Objet : --------------------------------------------------------------
 void setupMurDeBrique(Form *formlist[MAX_FORMS_NUMBER], unsigned short &number_of_forms, int Longeur = 5, int largeur = 1, Color col = RED);
@@ -46,7 +46,7 @@ void setupMurDeBrique(Form *formlist[MAX_FORMS_NUMBER], unsigned short &number_o
 // Frees media and shuts down SDL
 void close(SDL_Window **window);
 
-int createTextureFromImage (const char* filename, GLuint* textureID)
+int createTextureFromImage(const char *filename, GLuint *textureID)
 {
     SDL_Surface *imgSurface = IMG_Load(filename);
     if (imgSurface == NULL)
@@ -58,11 +58,11 @@ int createTextureFromImage (const char* filename, GLuint* textureID)
     {
         // Work out what format to tell glTexImage2D to use...
         int mode;
-        if (imgSurface->format->BytesPerPixel == 3)   // RGB 24bit
+        if (imgSurface->format->BytesPerPixel == 3) // RGB 24bit
         {
             mode = GL_RGB;
         }
-        else if (imgSurface->format->BytesPerPixel == 4)     // RGBA 32bit
+        else if (imgSurface->format->BytesPerPixel == 4) // RGBA 32bit
         {
             mode = GL_RGBA;
         }
@@ -82,8 +82,8 @@ int createTextureFromImage (const char* filename, GLuint* textureID)
         glTexImage2D(GL_TEXTURE_2D, 0, mode, imgSurface->w, imgSurface->h, 0, mode, GL_UNSIGNED_BYTE, imgSurface->pixels);
 
         // these affect how this texture is drawn later on...
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
         // clean up
         SDL_FreeSurface(imgSurface);
@@ -91,14 +91,13 @@ int createTextureFromImage (const char* filename, GLuint* textureID)
     }
 }
 
-
-void createSTL(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_forms, const std::string &path, Point pt,Point rotation, GLuint textureid_1, Color Couleur)
+Sol *createSTL(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_forms, const std::string &path, Point pt, Point rotation, GLuint textureid_1, Color Couleur)
 {
     Sol *sol = new Sol(Couleur); // Créez un nouvel objet de brique en dehors de la boucle
     if (!sol->loadSTL(path))
     {
         printf("Failed to load STL model!\n");
-        //delete sol; // Supprimez l'objet brique si le chargement échoue
+        // delete sol; // Supprimez l'objet brique si le chargement échoue
     }
     sol->moveAbsolue(pt);
     sol->getAnim().setRotation(rotation); // Déplacez le nouvel objet brique
@@ -106,6 +105,86 @@ void createSTL(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_for
 
     forms_list[number_of_forms] = sol; // Stockez le nouvel objet dans le tableau
     number_of_forms++;
+    return sol;
+}
+
+void CreateTrees(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_forms,Point tree)
+{
+
+    Sol *Trunk = new Sol(BROWN); // Créez un nouvel objet de brique en dehors de la boucle
+
+    if (!Trunk->loadSTL("Solidworks/trunk_V2Plan.STL"))
+    {
+        printf("Failed to load STL model!\n");
+        // delete sol; // Supprimez l'objet brique si le chargement échoue
+    }
+    //tree(10, 0, 10); // à re
+
+    Trunk->moveAbsolue(tree);
+    Point rot_trunk(-90, 0, 0);
+    Trunk->getAnim().setRotation(rot_trunk); // Déplacez le nouvel objet brique
+    forms_list[number_of_forms] = Trunk;     // Stockez le nouvel objet dans le tableau
+    number_of_forms++;
+    Sol *leaf = new Sol(BLACKGREEN); // Créez un nouvel objet de brique en dehors de la boucle
+    if (!leaf->loadSTL("Solidworks/Leaf_V4.STL"))
+    {
+        printf("Failed to load STL model!\n");
+        // delete sol; // Supprimez l'objet brique si le chargement échoue
+    }
+    tree.x -= 0.4;
+    tree.y += 2;
+    leaf->moveAbsolue(tree);
+    Point rot_leaf(90, -30, 0);
+    leaf->getAnim().setRotation(rot_leaf); // Déplacez le nouvel objet brique
+    forms_list[number_of_forms] = leaf;     // Stockez le nouvel objet dans le tableau
+    number_of_forms++;
+
+
+
+    // createSTL(forms_list, number_of_forms, "Solidworks/trunk_V2Plan.STL", pt_trunk, rot_trunk, textureid_1, BROWN);
+}
+
+void Repeat_trees(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_forms,int Longeur)
+{
+    float distance_X = 10;
+    float entraxe_chateau = 10;
+    int Largeur = 2;
+    for (int i = 0; i < Largeur; i++)
+    {
+        for (int j = 0; j < Longeur; j++)
+        {
+            Point tree((j * distance_X)+10,  0, (i * entraxe_chateau)+2); //en metres)
+            CreateTrees(forms_list, number_of_forms,tree);
+            // newBrique->getAnim().setPos(pt); // Déplacez le nouvel objet brique
+        }
+    }
+
+}
+
+void setupMur(Form *forms_list[MAX_FORMS_NUMBER], unsigned short &number_of_forms,int Longeur)
+{
+    float rayon = 0.800/2;
+    int largeur  = 6;
+
+    for (int i = 0; i < largeur; i++)
+    {
+        for (int j = 0; j < Longeur; j++)
+        {
+
+            Sol *Brique = new Sol(GREY); // Créez un nouvel objet de brique en dehors de la boucle
+            if (!Brique->loadSTL("Solidworks/brique_800_new_origine.STL"))
+            {
+                printf("Failed to load STL model!\n");
+                // delete sol; // Supprimez l'objet brique si le chargement échoue
+            }
+            Point pt(5.6, (i * (2*rayon)+rayon)+0, (j * (2.01*rayon))+2.4); //en metres
+            Brique->getAnim().setPos(pt); // Déplacez le nouvel objet brique
+
+            forms_list[number_of_forms] = Brique;     // Stockez le nouvel objet dans le tableau
+            number_of_forms++; // newBrique->getAnim().setPos(pt); // Déplacez le nouvel objet brique
+        }
+    }
+
 }
 
 /***************************************************************************/
@@ -119,9 +198,14 @@ int main(int argc, char *args[])
     float TranslateX;
     float TranslateZ;
     float angle_lancement = 10;
+    float CoordX = 9.6, CoordY = 2, CoordZ = 10;
     GLuint textureid_1, textureid_2;
-   createTextureFromImage("resources/images/earth_texture.jpg", &textureid_1);
-   createTextureFromImage("resources/images/tiles.bmp", &textureid_2);
+    int RotY = 180;
+    int Longeur = 12;
+    int largeur = 6;
+
+    createTextureFromImage("resources/images/earth_texture.jpg", &textureid_1);
+    createTextureFromImage("resources/images/tiles.bmp", &textureid_2);
     // OpenGL context
     SDL_GLContext gContext;
     printf("Hello World\n");
@@ -153,28 +237,25 @@ int main(int argc, char *args[])
 
         // Create here specific forms and add them to the list...
         // Don't forget to update the actual number_of_forms !
-         Cube *pFace = NULL;
-         pFace = new Cube(Vector(1,0,0), Vector(0,1,0), Point(-0.5, -0.5, -0.5), 100, 100, ORANGE);
-         forms_list[number_of_forms] = pFace;
-         number_of_forms++;
-
-        Point pt_chateau(0, 0, 0);
-        Point rotation_chateau(0,-90,0);
-        createSTL(forms_list, number_of_forms, "Solidworks/chateau.STL", pt_chateau,rotation_chateau,textureid_1,GREY);
-        Point rotation_catapulte(0,90,0);
+        Point pt_chateau(0, 0, 6.5);
+        Point rotation_chateau(0, 180, 0);
+        createSTL(forms_list, number_of_forms, "Solidworks/Castle_new_origine.stl", pt_chateau, rotation_chateau, textureid_1, GREY);
+        Point rotation_catapulte(0, 90, 0);
         Point pt_catapulte(40, 0, 6.5);
-        createSTL(forms_list, number_of_forms, "Solidworks/Catapulte_ASSEMBLY_without_sppon.STL", pt_catapulte,rotation_catapulte,textureid_1,ORANGE);
-        Point pt_spoon(41.3, 1.4, 5.5); //à re
-        Point rot_spoon(90,90,0);
-        createSTL(forms_list, number_of_forms, "Solidworks/catapulte_test.STL", pt_spoon,rot_spoon,textureid_1,RED);
-        Point pt_trunk(10, 0, 10); //à re
-        Point rot_trunk(-90,0,0);
-        createSTL(forms_list, number_of_forms, "Solidworks/trunk_V2Plan.STL", pt_trunk,rot_trunk,textureid_1,BROWN);
-        Point pt_Leaf(10, 0, 10); 
-        Point rot_Leaf(10, 1, 10); 
-        createSTL(forms_list, number_of_forms, "Solidworks/Leaf_V2.STL", pt_Leaf,rot_Leaf,textureid_1,BLACKGREEN);
-        
-       // Point pt_trees(20,0,20;)
+        createSTL(forms_list, number_of_forms, "Solidworks/Catapulte_ASSEMBLY_without_sppon.STL", pt_catapulte, rotation_catapulte, textureid_1, ORANGE);
+        Point pt_spoon(41.3, 1.4, 5.5); // à re
+        Point rot_spoon(90, 120, 0);
+        Sol *spoon = createSTL(forms_list, number_of_forms, "Solidworks/catapulte_test.STL", pt_spoon, rot_spoon, textureid_1, RED);
+
+        Point pt_balle(20, 0, 20); // à re
+        Point rot_balle(-90, 0, 0);
+        createSTL(forms_list, number_of_forms, "Solidworks/Boule.STL", pt_balle, rot_balle, textureid_1, BROWN);
+        Point pt_nuage(20, 40, 20); // à re
+        Point rot_nuage(-90, 0, 0);
+        createSTL(forms_list, number_of_forms, "Solidworks/nuage.STL", pt_nuage, rot_nuage, textureid_1, BROWN);
+        Repeat_trees(forms_list, number_of_forms,4);
+        setupMur(forms_list, number_of_forms,12);
+        // Point pt_trees(20,0,20;)
         // The forms to render
         // setupMurDeBrique(forms_list, number_of_forms);
         // Get first "current time"
@@ -182,9 +263,9 @@ int main(int argc, char *args[])
         // While application is running
         while (!quit)
         {
-
-            printf("camera x = %f, camera y  = %f, camera z %f \n", camera_position.x,camera_position.y,camera_position.z);
-            // Handle events on queue
+            //printf(" X, = %f  Y = %f Z = %f \n", CoordX, CoordY, CoordZ);
+            // printf("camera x = %f, camera y  = %f, camera z %f \n", camera_position.x, camera_position.y, camera_position.z);
+            //  Handle events on queue
             while (SDL_PollEvent(&event) != 0)
             {
                 int x = 0, y = 0;
@@ -207,7 +288,7 @@ int main(int argc, char *args[])
                         break;
                     case SDLK_LEFT:
                         angleAlphaY++;
-                        printf("%f\n",angleAlphaY);
+                        printf("%f\n", angleAlphaY);
                         break;
                     case SDLK_RIGHT:
                         angleAlphaY--;
@@ -248,8 +329,32 @@ int main(int argc, char *args[])
                     case SDLK_r:
                         camera_position.x = 0;
                         camera_position.y = 1.0;
-                        camera_position.z =  100.0;
+                        camera_position.z = 100.0;
                         printf("R\n");
+                        break;
+                    case SDLK_m:
+                        printf("m\n");
+                        break;
+                    case SDLK_l:
+                        printf("l\n");
+                        break;
+                    case SDLK_p:
+                        CoordY += 0.2;
+                        printf("m\n");
+                        break;
+                    case SDLK_o:
+                        CoordY -= 0.2;
+                        printf("l\n");
+                        break;
+                    case SDLK_1:
+                        RotY -= 1;
+                        //spoon->getAnim().setRotation(Point(90, RotY, 0));
+                        printf("\n");
+                        break;
+                    case SDLK_2:
+                        RotY += 1;
+                        //spoon->getAnim().setRotation(Point(90, RotY, 0));
+                        printf("l\n");
                         break;
                     default:
                         break;
@@ -270,7 +375,7 @@ int main(int argc, char *args[])
             }
 
             // Render the scene
-            render(forms_list, camera_position,angleAlphaY,TranslateX,TranslateZ);
+            render(forms_list, camera_position, angleAlphaY, TranslateX, TranslateZ);
             // Update window screen
             SDL_GL_SwapWindow(gWindow);
         }
@@ -451,15 +556,15 @@ void render(Form *formlist[MAX_FORMS_NUMBER], const Point &cam_pos, float angleA
     // Initialize Modelview Matrix
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    //glFrustum(-1.0, 1.0, -1.0, 1.0, 60.0, 100.0);
-    // Set the camera position and parameters
+    // glFrustum(-1.0, 1.0, -1.0, 1.0, 60.0, 100.0);
+    //  Set the camera position and parameters
     gluLookAt(cam_pos.x, cam_pos.y, cam_pos.z, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
     // Isometric view
     glRotated(-45, 0, 1, 0);
     glRotated(30, 1, 0, -1);
-    glRotated(angleAlphaY,0,1,0);
-    glTranslated(TranslateX,0,0);
-    glTranslated(0,0,TranslateZ);
+    glRotated(angleAlphaY, 0, 1, 0);
+    glTranslated(TranslateX, 0, 0);
+    glTranslated(0, 0, TranslateZ);
     // X, Y and Z axis
     glPushMatrix(); // Preserve the camera viewing point for further forms
     // Render the coordinates system
