@@ -188,4 +188,26 @@ public:
     void render();
     void update(reel delta_t);
 };
+
+class Catapulte : public Form
+{
+    public:
+    Catapulte(Color cl = Color(), Point pos = Point(0,0,0), Point rot = Point(0,0,0), char* url = NULL) {
+        anim.setTypeForm(CATAPULTE_BRAS);
+        anim.setColor(cl);
+        anim.setMasse(1);
+        anim.setPos(pos);
+        anim.setRotation(rot);
+        setPhysics(false);
+        if(url!=NULL)
+        {
+            modelSTL = ModelSTL();
+            modelSTL.loadSTL(url);
+            // anim.setPos(anim.getPos());
+            // anim.setRotation(anim.getRotation());
+        }
+    }
+    void render();
+    void update(reel delta_t);
+};
 #endif // FORMS_H_INCLUDED

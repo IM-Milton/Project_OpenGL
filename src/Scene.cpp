@@ -56,6 +56,32 @@ bool Scene::setupObjects() // Initialisation des objets
     // brique->getAnim().setPos(Point(1,1,1));
     // addForm(brique);
 
+
+    Catapulte *brasCatapulte = new Catapulte(YELLOW,Point(2,0,2),Point(0,0,0),"Solidworks/catapulte_test.STL");
+    if(!brasCatapulte->modelSTL.isLoaded())
+    {
+        printf("Failed to load Spoon.STL model!\n");
+        delete brasCatapulte; // Supprimez l'objet brique si le chargement échoue
+    }
+    addForm(brasCatapulte);
+
+
+
+    staticForm* catapulte = new staticForm(RED,Point(2,1,1),Point(0,0,0),"Solidworks/Chassis_Finished.STL");
+    if(!catapulte->modelSTL.isLoaded())
+    {
+        printf("Failed to load Chassis.STL model!\n");
+        delete catapulte; // Supprimez l'objet brique si le chargement échoue
+    }
+    addForm(catapulte);
+
+
+    staticForm* chateau = new staticForm(GREEN,Point(0,0,0),Point(0,0,0),"Soldiworks/chateau.STL");
+    if(!catapulte->modelSTL.isLoaded())
+    {
+        delete catapulte; // Supprimez l'objet brique si le chargement échoue
+    }
+
     PlanForm *sol = new PlanForm(GREEN, "Solidworks/sol.STL"); // Créez un nouvel objet de brique en dehors de la boucle
         if (!sol->modelSTL.isLoaded()){
             printf("Failed to load sol.STL model!\n");
@@ -495,7 +521,7 @@ void Scene::update(reel delta_t){
     i = 0;
     if(_pause)
     {
-        //printf("on est en pause: %d\n",inpu);
+        
         return;
     }
     while (formlist[i] != NULL) {

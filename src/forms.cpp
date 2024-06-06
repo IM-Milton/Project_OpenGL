@@ -229,3 +229,31 @@ void staticForm::render() {
         modelSTL.render();
     }
 }
+
+void Catapulte::update(reel delta_t) {
+
+}
+void Catapulte::render() {
+    // Render the STL model
+    Form::render();
+
+    if(!modelSTL.isLoaded()){//Le stl n'a pas été chargée donc on doit dessiner à la main la brique
+        //Alors on affiche une brique normal de base
+        //Enzo doit faire une brique de 500/1000 de longeur, 200/1000 de largeur et 200/1000 de profondeur
+        // printf("Triangle vide !! Doit donc dessiner la brique à la main %d\n");
+            Form::render();
+
+            glBegin(GL_QUADS);
+            {
+                glVertex3d(0, 1, 0);
+                glVertex3d(1, 1, 0);
+                glVertex3d(1, 1, 1);
+                glVertex3d(0, 1, 1);
+            }
+            glEnd();
+    }else{
+        // printf("Something\n");
+        modelSTL.setAnim(anim);
+        modelSTL.render();
+    }
+}

@@ -9,7 +9,8 @@ enum SHAPE_ID{
     CATAPULTE_CHASSIS,
     PLAN,
     STATIC,
-    SPHERE
+    SPHERE,
+    CATAPULTE_BRAS
 };
 
 class Color
