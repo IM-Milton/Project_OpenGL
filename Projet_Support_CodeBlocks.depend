@@ -1,0 +1,5214 @@
+# depslib dependency file v1.0
+1454689343 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\begin_code.h
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\close_code.h
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1454683642 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\01_hello_sdl.cpp
+	<SDL2/SDL.h>
+	<cstdio>
+
+1454684296 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\02_getting_an_image_on_the_screen.cpp
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<stdio.h>
+
+1451800373 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1454684543 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\50_sdl_and_opengl_2.cpp
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	<stdio.h>
+	<string>
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768293 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1214661748 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\src\3d.cpp
+	<iostream>
+	<cmath>
+	"3D.h"
+
+1459173378 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\include\3d.h
+
+1459173160 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\physique\src\main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+
+1459417149 source:c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\src\main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\begin_code.h
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\close_code.h
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768293 c:\users\cccccc\desktop\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1459491535 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\src\main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\begin_code.h
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\close_code.h
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768293 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_introduction_opengl\projet_codeblocks_fonctionnel\tp_opengl_sdl2\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1463931642 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\src\correctiontp.cpp
+	<iostream>
+	<cmath>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\begin_code.h
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\close_code.h
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1459615046 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1459614974 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\src\geometry.h
+
+1459617640 source:c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\src\correctiontp.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\begin_code.h
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\close_code.h
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768293 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1459614973 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\src\geometry.h
+
+1459615045 source:c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1459618036 c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\src\forms.h
+	"geometry.h"
+
+1459618091 source:c:\users\cccccc\desktop\projets_coop_3a_app_info_ees_15-16\tp_opengl_sdl2\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1459618412 source:c:\users\cbernez\desktop\tp_opengl_sdl2\src\correctiontp.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\begin_code.h
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\close_code.h
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768294 c:\users\cbernez\desktop\tp_opengl_sdl2\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1459614974 c:\users\cbernez\desktop\tp_opengl_sdl2\src\geometry.h
+
+1459618038 c:\users\cbernez\desktop\tp_opengl_sdl2\src\forms.h
+	"geometry.h"
+
+1459618092 source:c:\users\cbernez\desktop\tp_opengl_sdl2\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1459615046 source:c:\users\cbernez\desktop\tp_opengl_sdl2\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1463915486 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\src\forms.h
+	"geometry.h"
+	"animation.h"
+
+1460806046 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1463915486 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\src\animation.h
+	"geometry.h"
+
+1463931684 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2\src\animation.cpp
+	"animation.h"
+
+1466440341 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\animation.cpp
+	"animation.h"
+
+1466440341 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\animation.h
+	"geometry.h"
+
+1466425944 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\geometry.h
+	<iostream>
+
+1497624427 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\begin_code.h
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\close_code.h
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1497621053 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\forms.h
+	"geometry.h"
+	"animation.h"
+
+1466442214 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1465311952 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\premier_prog.cpp
+	<iostream>
+	<cmath>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466241629 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\src\animation.cpp
+	"animation.h"
+
+1466241624 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\src\animation.h
+	"geometry.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\src\geometry.h
+
+1466240555 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\begin_code.h
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\close_code.h
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1466240762 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\src\forms.h
+	"geometry.h"
+	"animation.h"
+
+1466239128 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1466240334 source:i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\src\premier_prog.cpp
+	<iostream>
+	<cmath>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466239128 i:\important_copie_dd_120go\programmation_c_cpp\projets_code_block\sdl2\tp_opengl_sdl2_version_etudiants\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1497621618 source:d:\travail\ifips_optronique\ci1a_apprentissage\projet_cooperatif\tp\tp_introduction_opengl\projets_codeblocks_fonctionnels\tp_opengl_sdl2_version_etudiants\src\first_prog.cpp
+	<iostream>
+	<cmath>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1466443941 source:c:\users\cccccc\desktop\projet_support_codeblocks\src\animation.cpp
+	"animation.h"
+
+1466440341 c:\users\cccccc\desktop\projet_support_codeblocks\src\animation.h
+	"geometry.h"
+
+1466425944 c:\users\cccccc\desktop\projet_support_codeblocks\src\geometry.h
+	<iostream>
+
+1623569042 source:c:\users\cccccc\desktop\projet_support_codeblocks\src\first_prog.cpp
+	<iostream>
+	<cmath>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\begin_code.h
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\close_code.h
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1497621053 c:\users\cccccc\desktop\projet_support_codeblocks\src\forms.h
+	"geometry.h"
+	"animation.h"
+
+1623568532 source:c:\users\cccccc\desktop\projet_support_codeblocks\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1623568532 source:c:\users\cccccc\desktop\projet_support_codeblocks\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1623568133 c:\users\cccccc\desktop\projet_support_codeblocks\include\animation.h
+	"geometry.h"
+
+1466429544 c:\users\cccccc\desktop\projet_support_codeblocks\include\geometry.h
+	<iostream>
+
+1623568190 c:\users\cccccc\desktop\projet_support_codeblocks\include\forms.h
+	"geometry.h"
+	"animation.h"
+
+1466443941 source:c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\src\animation.cpp
+	"animation.h"
+
+1623568133 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\animation.h
+	"geometry.h"
+
+1466429544 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\geometry.h
+	<iostream>
+
+1623568532 source:c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1623618651 source:c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\begin_code.h
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\close_code.h
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1623617445 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\forms.h
+	"geometry.h"
+	"animation.h"
+
+1623617564 source:c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\src\first_prog.cpp
+	<iostream>
+	<cmath>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451768294 c:\users\cccccc\desktop\projet_support_codeblocks_2021-06-13\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1466440341 source:c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\src\animation.cpp
+	"animation.h"
+
+1623564533 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\animation.h
+	"geometry.h"
+
+1466425944 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\geometry.h
+	<iostream>
+
+1653394561 source:c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\src\first_prog.cpp
+	<iostream>
+	<cmath>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"geometry.h"
+	"forms.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<winsdkver.h>
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\begin_code.h
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\close_code.h
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910407 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1650910406 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1623613845 c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\include\forms.h
+	"geometry.h"
+	"animation.h"
+
+1623615051 source:c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1623564932 source:c:\users\cccccc\desktop\prjsupport_codeblocks20tpopengl_pr_eleves\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1716813716 source:c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\src\animation.cpp
+	"animation.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\animation.h
+	"geometry.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\geometry.h
+	<iostream>
+
+1717688836 source:c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\src\first_prog.cpp
+	<iostream>
+	<cmath>
+	<glm/glm.hpp>
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	<thread>
+	<chrono>
+	<condition_variable>
+	"geometry.h"
+	"forms.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<winsdkver.h>
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\begin_code.h
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\close_code.h
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813714 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813714 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813714 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813711 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813714 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813714 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1716813713 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1717674852 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\forms.h
+	"geometry.h"
+	"animation.h"
+
+1717674210 source:c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\src\forms.cpp
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"forms.h"
+
+1716813716 source:c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\src\geometry.cpp
+	<cmath>
+	"geometry.h"
+
+1717371383 source:c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\src\camera.cpp
+	"camera.h"
+	<glm/gtc/matrix_transform.hpp>
+	<iostream>
+
+1717371144 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\camera.h
+	<glm/glm.hpp>
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+	<cstdint>
+	<type_traits>
+
+1717335431 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\simd\platform.h
+	<cuda.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+	"neon.h"
+
+1717335431 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\simd\neon.h
+	<arm_neon.h>
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\fwd.hpp
+	"detail/qualifier.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\vec2.hpp
+	"./ext/vector_bool2.hpp"
+	"./ext/vector_bool2_precision.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float2_precision.hpp"
+	"./ext/vector_double2.hpp"
+	"./ext/vector_double2_precision.hpp"
+	"./ext/vector_int2.hpp"
+	"./ext/vector_int2_sized.hpp"
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_uint2_sized.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_bool2.hpp
+	"../detail/type_vec2.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec2.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\_swizzle.hpp
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\_swizzle_func.hpp
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec2.inl
+	"./compute_vector_relational.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<limits>
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_bool2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_float2.hpp
+	"../detail/type_vec2.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_float2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_double2.hpp
+	"../detail/type_vec2.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_double2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_int2.hpp
+	"../detail/type_vec2.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_int2_sized.hpp
+	"../ext/vector_int2.hpp"
+	"../ext/scalar_int_sized.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\scalar_int_sized.hpp
+	"../detail/setup.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_uint2.hpp
+	"../detail/type_vec2.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_uint2_sized.hpp
+	"../ext/vector_uint2.hpp"
+	"../ext/scalar_uint_sized.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\scalar_uint_sized.hpp
+	"../detail/setup.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\vec3.hpp
+	"./ext/vector_bool3.hpp"
+	"./ext/vector_bool3_precision.hpp"
+	"./ext/vector_float3.hpp"
+	"./ext/vector_float3_precision.hpp"
+	"./ext/vector_double3.hpp"
+	"./ext/vector_double3_precision.hpp"
+	"./ext/vector_int3.hpp"
+	"./ext/vector_int3_sized.hpp"
+	"./ext/vector_uint3.hpp"
+	"./ext/vector_uint3_sized.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_bool3.hpp
+	"../detail/type_vec3.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec3.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec3.inl
+	"compute_vector_relational.hpp"
+	"compute_vector_decl.hpp"
+	"type_vec_simd.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\compute_vector_decl.hpp
+	<functional>
+	"_vectorize.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\_vectorize.hpp
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec_simd.inl
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_bool3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_float3.hpp
+	"../detail/type_vec3.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_float3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_double3.hpp
+	"../detail/type_vec3.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_double3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_int3.hpp
+	"../detail/type_vec3.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_int3_sized.hpp
+	"../ext/vector_int3.hpp"
+	"../ext/scalar_int_sized.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_uint3.hpp
+	"../detail/type_vec3.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_uint3_sized.hpp
+	"../ext/vector_uint3.hpp"
+	"../ext/scalar_uint_sized.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\vec4.hpp
+	"./ext/vector_bool4.hpp"
+	"./ext/vector_bool4_precision.hpp"
+	"./ext/vector_float4.hpp"
+	"./ext/vector_float4_precision.hpp"
+	"./ext/vector_double4.hpp"
+	"./ext/vector_double4_precision.hpp"
+	"./ext/vector_int4.hpp"
+	"./ext/vector_int4_sized.hpp"
+	"./ext/vector_uint4.hpp"
+	"./ext/vector_uint4_sized.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_bool4.hpp
+	"../detail/type_vec4.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec4.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec4.inl
+	"compute_vector_relational.hpp"
+	"compute_vector_decl.hpp"
+	"type_vec_simd.inl"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_bool4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_float4.hpp
+	"../detail/type_vec4.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_float4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_double4.hpp
+	"../detail/type_vec4.hpp"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_double4_precision.hpp
+	"../detail/setup.hpp"
+	"../detail/type_vec4.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_int4.hpp
+	"../detail/type_vec4.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_int4_sized.hpp
+	"../ext/vector_int4.hpp"
+	"../ext/scalar_int_sized.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_uint4.hpp
+	"../detail/type_vec4.hpp"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\vector_uint4_sized.hpp
+	"../ext/vector_uint4.hpp"
+	"../ext/scalar_uint_sized.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat2x2.hpp
+	"./ext/matrix_double2x2.hpp"
+	"./ext/matrix_double2x2_precision.hpp"
+	"./ext/matrix_float2x2.hpp"
+	"./ext/matrix_float2x2_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat2x2.hpp
+	"type_vec2.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat2x3.hpp
+	"./ext/matrix_double2x3.hpp"
+	"./ext/matrix_double2x3_precision.hpp"
+	"./ext/matrix_float2x3.hpp"
+	"./ext/matrix_float2x3_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat2x3.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat2x3.inl
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat2x4.hpp
+	"./ext/matrix_double2x4.hpp"
+	"./ext/matrix_double2x4_precision.hpp"
+	"./ext/matrix_float2x4.hpp"
+	"./ext/matrix_float2x4_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat2x4.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat2x4.inl
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat3x2.hpp
+	"./ext/matrix_double3x2.hpp"
+	"./ext/matrix_double3x2_precision.hpp"
+	"./ext/matrix_float3x2.hpp"
+	"./ext/matrix_float3x2_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat3x2.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat3x2.inl
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat3x3.hpp
+	"./ext/matrix_double3x3.hpp"
+	"./ext/matrix_double3x3_precision.hpp"
+	"./ext/matrix_float3x3.hpp"
+	"./ext/matrix_float3x3_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat3x3.hpp
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+	"../common.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\common.hpp
+	"detail/qualifier.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"compute_common.hpp"
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_vector_relational.inl
+	"func_vector_relational_simd.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_vector_relational_simd.inl
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\compute_common.hpp
+	"setup.hpp"
+	<limits>
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec1.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_vec1.inl
+	"./compute_vector_relational.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1717335431 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\simd\common.h
+	"platform.h"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat3x4.hpp
+	"./ext/matrix_double3x4.hpp"
+	"./ext/matrix_double3x4_precision.hpp"
+	"./ext/matrix_float3x4.hpp"
+	"./ext/matrix_float3x4_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat3x4.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat3x4.inl
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat4x2.hpp
+	"./ext/matrix_double4x2.hpp"
+	"./ext/matrix_double4x2_precision.hpp"
+	"./ext/matrix_float4x2.hpp"
+	"./ext/matrix_float4x2_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat4x2.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat4x2.inl
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double4x2_precision.hpp
+	"../detail/type_mat4x2.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float4x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat4x3.hpp
+	"./ext/matrix_double4x3.hpp"
+	"./ext/matrix_double4x3_precision.hpp"
+	"./ext/matrix_float4x3.hpp"
+	"./ext/matrix_float4x3_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat4x3.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat4x3.inl
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\mat4x4.hpp
+	"./ext/matrix_double4x4.hpp"
+	"./ext/matrix_double4x4_precision.hpp"
+	"./ext/matrix_float4x4.hpp"
+	"./ext/matrix_float4x4_precision.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat4x4.hpp
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"../geometric.hpp"
+	"type_mat4x4_simd.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"func_geometric_simd.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1717335431 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\simd\exponential.h
+	"platform.h"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1717335431 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\simd\geometric.h
+	"common.h"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_mat4x4_simd.inl
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1717335431 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\simd\matrix.h
+	"geometric.h"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_double2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1717335424 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_float2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_trigonometric_simd.inl
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\packing.hpp
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float4.hpp"
+	"detail/func_packing.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"func_packing_simd.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\type_half.inl
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_packing_simd.inl
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\integer.hpp
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1717335422 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_integer.inl
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1717335431 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\simd\integer.h
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../ext/matrix_projection.hpp"
+	"../ext/matrix_clip_space.hpp"
+	"../ext/matrix_transform.hpp"
+	"matrix_transform.inl"
+
+1717335425 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_projection.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_projection.inl"
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\gtc\constants.hpp
+	"../ext/scalar_constants.hpp"
+	"constants.inl"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\scalar_constants.hpp
+	"../detail/setup.hpp"
+	"scalar_constants.inl"
+
+1717335426 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\scalar_constants.inl
+	<limits>
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\gtc\constants.inl
+
+1717335425 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_projection.inl
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_clip_space.hpp
+	"../ext/scalar_constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"matrix_clip_space.inl"
+
+1717335423 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_clip_space.inl
+
+1717335425 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_transform.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_transform.inl"
+
+1717335425 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\ext\matrix_transform.inl
+
+1717335427 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1716813712 c:\users\afk3\downloads\prjsupport_codeblocks20tpopengl_pr_eleves\prjsupport_codeblocks20tpopengl_pr_eleves\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+

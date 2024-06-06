@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "t\u00E2che-prjSupport_CodeBlocks20TPopenGL_pr_Eleves",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}
