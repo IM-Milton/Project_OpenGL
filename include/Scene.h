@@ -37,9 +37,11 @@ private:
     void close(SDL_Window** window);
     void checkCollision(int &formIndex, Point &pos, Point &rot, Vector &Fn, reel delta_t);
 
-    void setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col);
+    void setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col, HitZone size = {((800./2.)/1000.)}, Point rot = Point(0,0,0));
 
-    void setupCatapulte(Point position);
+    void setupCatapulte(Point position, Point rot = Point(0,0,0));
+
+    void CreateTrees(Point tree); void Repeat_trees(int Longeur);
 
 
 

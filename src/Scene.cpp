@@ -30,7 +30,7 @@ bool Scene::init()
     formIndex =0;
 
 
-    camera_position=Point(0, 1.0, 30.0);
+    camera_position=Point(0, 1, 100);
 
     quit=false;
     setupObjects();
@@ -72,21 +72,41 @@ bool Scene::setupObjects() // Initialisation des objets
         sol->setPhysics(false);
         addForm(sol);
 
-        setupCatapulte(Point(0,0,10));
+        // Repeat_trees(4);
+        // setupCatapulte(Point(0,0,10));
+        
+        Point rotation_catapulte(0, 90, 0);
+        Point pt_catapulte(5, 0, 20);
+        setupCatapulte(pt_catapulte);
+
+        setupMurDeBrique(10,6, Point(0,0,0),GREY);
+
+        Point pt_nuage(20, 40, 20); // à re
+        Point rot_nuage(-90, 0, 0);
+        staticForm *nuage = new staticForm(WHITE, pt_nuage, rot_nuage, "Solidworks/nuage.STL");
+        if (!nuage->modelSTL.isLoaded()){
+            printf("Failed to load nuage.STL model!\n");
+            // delete nuage; // Supprimez l'objet brique si le chargement échoue
+        }
+        addForm(nuage);
 
         // setupCatapulte(Point(3,0,10));
 
         // setupCatapulte(Point(-3,0,10));
 
-
-        staticForm *chateau = new staticForm(RED, Point(0, 0, 0), Point(0, 0, 0), "Solidworks/chateau.STL");
+        Point pt_chateau(4, 0, -6.5);
+        Point rotation_chateau(0, 90, 0);
+        staticForm *chateau = new staticForm(GREY, pt_chateau, rotation_chateau, "Solidworks/Castle_new_origine.stl");
         if (!chateau->modelSTL.isLoaded()){
             printf("Failed to load chateau.STL model!\n");
             // delete chateau; // Supprimez l'objet brique si le chargement échoue
         }
-        // addForm(chateau);
+        addForm(chateau);
+        // setupMurDeBrique(10,6, Point(5.6,0,0),GREY, {0.8/2.}, Point(0,90,0));
 
-        setupMurDeBrique(10,6, Point(13.65,0,0),RED);
+        
+
+        // setupMurDeBrique(10,6, Point(13.65,0,0),RED);
 
         if(USE_STL)
         {
@@ -95,15 +115,16 @@ bool Scene::setupObjects() // Initialisation des objets
 
 }
 
-void Scene::setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col) {
-    static const HitZone size = {((200./2.)/1000.)};//Brique cubique de taille de 200 mm de long exprimé en metre
+void Scene::setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col, HitZone size, Point rot) {
+    // static const HitZone size = {((200./2.)/1000.)};//Brique cubique de taille de 200 mm de long exprimé en metre
 
-    Brique *brique = new Brique(col, 12.8, size, "Solidworks/brique_new_origine.STL"); // Créez un nouvel objet de brique en dehors de la boucle
+    Brique *brique = new Brique(col, 12.8, size, "Solidworks/brique_final.STL"); // Créez un nouvel objet de brique en dehors de la boucle
     if (!brique->modelSTL.isLoaded()){
         printf("Failed to load brique.STL model!\n");
         // delete brique; // Supprimez l'objet brique si le chargement échoue
         return;
     }
+    brique->getAnim().setRotation(rot);
     brique->getAnim().setMasse(12.8); // 12.8 kg
     brique->getAnim().setSize(size);
     brique->getAnim().setCoefRestitution(0.2);
@@ -134,8 +155,8 @@ void Scene::setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col
     for (int i = 0; i < largeur; i++) {
         for (int j = 0; j < Longeur; j++) {
             Brique* newBrique = new Brique(*brique); // Créez un nouvel objet brique à chaque itération
-            Point pt(j * (2.01*size.rayon), i * (2*size.rayon)+size.rayon, 0); //en metres
-            newBrique->getAnim().setPos(pt); // Déplacez le nouvel objet brique
+            Point pt(j * (2.01*size.rayon), i * (2.*size.rayon)+size.rayon, 0); //en metres
+            newBrique->getAnim().setPos(pt + initiale); // Déplacez le nouvel objet brique
             newBrique->setPhysics(true);
             addForm(newBrique); // Stockez le nouvel objet dans le tableau
         }
@@ -145,7 +166,7 @@ void Scene::setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col
 }
 
 
-void Scene::setupCatapulte(Point position){
+void Scene::setupCatapulte(Point position, Point rot){
         Sphere *sphere = new Sphere(BROWN,10,position,{0.3}, "Solidworks/boule.stl");
         // sphere->getAnim().setSpeed(Vector(0,10,10));
         if (!sphere->modelSTL.isLoaded()){
@@ -160,7 +181,7 @@ void Scene::setupCatapulte(Point position){
         // sphere->setCollisionEffect(false);
         addForm(sphere);
         // addForm(newS);
-        staticForm* chassis = new staticForm(RED,position,Point(0,0,0),"Solidworks/chassis.STL", {1.48});
+        staticForm* chassis = new staticForm(RED,position,rot,"Solidworks/chassis.STL", {1.48});
         if(!chassis->modelSTL.isLoaded())
         {
             printf("Failed to load chassis.STL model!\n");
@@ -168,8 +189,7 @@ void Scene::setupCatapulte(Point position){
         }
         addForm(chassis);
 
-
-        Point rotBrasCatapulte(-125,0,0);
+        Point rotBrasCatapulte(-125,rot.y,rot.x);
         Catapulte *brasCatapulte = new Catapulte(chassis, sphere, WHITE,{2},position,rotBrasCatapulte,"Solidworks/bras_catapulte.stl");
         if(!brasCatapulte->modelSTL.isLoaded())
         {
@@ -178,6 +198,44 @@ void Scene::setupCatapulte(Point position){
         }
         brasCatapulte->getAnim().setSpeedRotation(Vector(0,0,0));
         addForm(brasCatapulte);
+}
+
+void Scene::CreateTrees(Point tree)
+{
+    staticForm *Trunk = new staticForm(BROWN,tree,Point(-90, 0, 0), "Solidworks/trunk_V2Plan.STL"); // Créez un nouvel objet de brique en dehors de la boucle
+    if (!Trunk->modelSTL.isLoaded())
+    {
+        printf("Failed to load Trunk model!\n");
+        // delete sol; // Supprimez l'objet brique si le chargement échoue
+    }
+    addForm(Trunk);
+
+    tree.x -= 0.4;
+    tree.y += 2;
+    staticForm *leaf = new staticForm(BLACKGREEN,tree,Point(90, -30, 0),"Solidworks/Leaf_V4.STL"); // Créez un nouvel objet de brique en dehors de la boucle
+    if (!leaf->modelSTL.isLoaded())
+    {
+        printf("Failed to load leaf.STL model!\n");
+        // delete sol; // Supprimez l'objet brique si le chargement échoue
+    }
+    addForm(leaf);
+}
+
+void Scene::Repeat_trees(int Longeur)
+{
+    float distance_X = 10;
+    float entraxe_chateau = 10;
+    int Largeur = 2;
+    for (int i = 0; i < Largeur; i++)
+    {
+        for (int j = 0; j < Longeur; j++)
+        {
+            Point tree((j * distance_X)+10,  0, (i * entraxe_chateau)+2); //en metres)
+            CreateTrees(tree);
+            // newBrique->getAnim().setPos(pt); // Déplacez le nouvel objet brique
+        }
+    }
+
 }
 
 reel angleDeChuteObjet(reel angle, reel inclinaisionPlan) {
@@ -943,7 +1001,7 @@ bool Scene::_initGL()
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
     // Fix aspect ratio and depth clipping planes
-    gluPerspective(40.0, (GLdouble)SCREEN_WIDTH/SCREEN_HEIGHT, 1.0, 100.0);
+    gluPerspective(40.0, (GLdouble)SCREEN_WIDTH/SCREEN_HEIGHT, 1.0, 3000.0);
 
 
     // Initialize Modelview Matrix
