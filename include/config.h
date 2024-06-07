@@ -1,5 +1,5 @@
-#ifndef GLOBALVAR_H
-#define GLOBALVAR_H
+#ifndef GLOBAL_VAR_H
+#define GLOBAL_VAR_H
 
 
 #include <iostream>
@@ -21,4 +21,13 @@ const int PHYSIQS_DELAY =1;
 
 const bool USE_STL = true;
 
-#endif
+
+struct sceneInput
+{
+    bool launch,space_down,increaseRope,decreaseRope,rotateLeft,rotateRight,reset,quit,space_up, check;
+
+};
+
+
+
+#endif //GLOBAL_VAR_H

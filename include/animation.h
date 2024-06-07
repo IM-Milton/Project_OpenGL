@@ -28,7 +28,10 @@ const Color BLUE(0.0f, 0.0f, 1.0f);
 const Color GREEN(0.0f, 1.0f, 0.0f);
 const Color YELLOW(1.0f, 1.0f, 0.0f);
 const Color WHITE(1.0f, 1.0f, 1.0f);
-const Color ORANGE(1.0f, 0.65f, 0.0f);
+const Color GREY(0.65f, 0.65f, 0.65f);
+const Color BROWN(0.81f, 0.64f, 0.42f);
+const Color BLACKGREEN(0.0f, 0.3f, 0.f);
+const Color ORANGE(.0f, 0.65f, 0.0f);
 
 class Animation
 {

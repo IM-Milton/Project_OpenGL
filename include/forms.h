@@ -9,7 +9,7 @@
 #include <iostream>
 #include <cmath>
 #include <GL/gl.h>
-
+#include "config.h"
 //l'echelle est en metre. Soit 1 egale 1 metre
 
 struct Vertex {
@@ -52,6 +52,8 @@ protected:
     Vector _Fn;
     Plan plan;
     //Partie Physique Fin -----------------------------------------------
+
+    sceneInput _input = {false,false,false,false,false,false,false,false,false,false};
 public:
     ModelSTL modelSTL;
     Animation& getAnim() {return anim;}
@@ -62,6 +64,9 @@ public:
 
     void setCollisionEffect(bool activer = true){etatEffetCollision = activer;}
     bool getCollisionEffect() {return etatEffetCollision;}
+
+    sceneInput& getInputFlags() {return _input;}
+    void setInputFlags(sceneInput flag){_input = flag;}
 
     Plan& getPlan() {return plan;}//Utiliser si la form est un plan, comme le sol
     void setPlan(Plan pl){plan = pl;}
@@ -124,27 +129,6 @@ public:
 };
 
 
-class Sphere : public Form
-{
-public:
-    Sphere(Color cl = Color(), reel masse = 18.4, HitZone size = {200}, char* url = NULL) {
-        anim.setTypeForm(SPHERE);
-        anim.setColor(cl);
-        anim.setSpeedRotation(0);
-        anim.setMasse(masse);//En kg
-        anim.setSize(size);
-        setFn(Vector(0.0, 0.0, 0.0));
-        if(url!=NULL)
-        {
-            modelSTL = ModelSTL();
-            modelSTL.loadSTL(url);
-            // anim.setPos(anim.getPos());
-            // anim.setRotation(anim.getRotation());
-        }
-    }
-    void render();
-    void update(reel delta_t);
-};
 
 class PlanForm : public Form
 {
@@ -170,13 +154,37 @@ public:
 class staticForm : public Form
 {
 public:
-    staticForm(Color cl = Color(), Point pos = Point(0,0,0), Point rot = Point(0,0,0), char* url = NULL) {
+    staticForm(Color cl = Color(), Point pos = Point(0,0,0), Point rot = Point(0,0,0), char* url = NULL, HitZone size = {0}) {
         anim.setTypeForm(STATIC);
         anim.setColor(cl);
         anim.setMasse(1);
         anim.setPos(pos);
         anim.setRotation(rot);
+        anim.setSize(size);
         setPhysics(false);
+        if(url!=NULL)
+        {
+            modelSTL = ModelSTL();
+            modelSTL.loadSTL(url);
+            // anim.setPos(anim.getPos());
+            // anim.setRotation(anim.getRotation());
+        }
+    }
+    void render();
+    void update(reel delta_t);
+};
+
+class Sphere : public Form
+{
+public:
+    Sphere(Color cl = Color(), reel masse = 18.4,Point pos = Point(0,0,0), HitZone size = {0.3}, char* url = NULL) {
+        anim.setTypeForm(SPHERE);
+        anim.setColor(cl);
+        anim.setSpeedRotation(0);
+        anim.setMasse(masse);//En kg
+        anim.setSize(size);//En metres
+        anim.setPos(pos);
+        setFn(Vector(0.0, 1*anim.getMasse()*g, 0.0));
         if(url!=NULL)
         {
             modelSTL = ModelSTL();
@@ -191,14 +199,25 @@ public:
 
 class Catapulte : public Form
 {
+    private:
+        staticForm *_chassis;
+        Sphere *_sphere;
     public:
-    Catapulte(Color cl = Color(), Point pos = Point(0,0,0), Point rot = Point(0,0,0), char* url = NULL) {
+    Catapulte(staticForm *chassis, Sphere *sphere, Color cl = Color(), HitZone size = {2}, Point pos = Point(0,0,0), Point rot = Point(0,0,0), char* url = NULL){
+        _chassis = chassis;
+        _sphere = sphere;
         anim.setTypeForm(CATAPULTE_BRAS);
         anim.setColor(cl);
-        anim.setMasse(1);
+        anim.setMasse(20);
+        if(chassis != NULL){
+            pos.y = chassis->getAnim().getPos().y + chassis->getAnim().getSize().rayon;
+        }
         anim.setPos(pos);
+        anim.setSpeed(0);
+        anim.setSpeedRotation(0);
         anim.setRotation(rot);
-        setPhysics(false);
+        anim.setSize(size);
+        setPhysics(true);
         if(url!=NULL)
         {
             modelSTL = ModelSTL();
@@ -210,4 +229,7 @@ class Catapulte : public Form
     void render();
     void update(reel delta_t);
 };
+
+
+
 #endif // FORMS_H_INCLUDED

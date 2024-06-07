@@ -56,6 +56,9 @@ void Form::update(reel delta_t)
 void Form::render()
 {
     static Point org, rot;
+
+    // Render the form
+    // Add your rendering code here
     // Point of view for rendering
     // Common for all Forms
     org = anim.getPos();
@@ -67,9 +70,6 @@ void Form::render()
     glRotated(rot.z, 0.0, 0.0, 1.0); // Rotation autour de l'axe Z
 
     glColor3f(anim.getColor().r, anim.getColor().g, anim.getColor().b);
-
-    // Render the form
-    // Add your rendering code here
 }
 
 void Form::physique(reel delta_t){
@@ -87,7 +87,6 @@ void Form::physique(reel delta_t){
     //Intergrer pour avoir la vitesse
     speed = anim.getSpeed() + anim.getAccel().integral(delta_t);//+v0;
     anim.setSpeed(speed);
-
 
     // Mettez à jour la position en fonction de la vitesse et du temps
     // On intergre la vitesse pour obtenir le delta position qu'on vient rajouter à notre position actuelle
@@ -145,11 +144,11 @@ void Brique::render() {
 
 
 void Sphere::update(reel delta_t) {
-    if (!getPhysics()){
-        anim.setAccel(0);
-        anim.setSpeed(0);
-        return;
-    }
+    // if (!getPhysics()){
+    //     anim.setAccel(0);
+    //     anim.setSpeed(0);
+    //     return;
+    // }
 
     // Alors concerné par la physique
     physique(delta_t);
@@ -164,9 +163,12 @@ void Sphere::render() {
         //Enzo doit faire une brique de 500/1000 de longeur, 200/1000 de largeur et 200/1000 de profondeur
         // printf("Triangle vide !! Doit donc dessiner la brique à la main %d\n");
             // Form::render();
-            GLUquadric *quadric = gluNewQuadric();
-            gluSphere(quadric,getAnim().getSize().rayon,18,8);
-            gluDeleteQuadric(quadric);
+            glBegin(GL_QUADS);
+            {
+                // GLUquadric *quadric = gluNewQuadric();
+                gluSphere(gluNewQuadric(),getAnim().getSize().rayon,18,8);
+                // gluDeleteQuadric(quadric);
+            }
             glEnd();
     }else{
         modelSTL.setAnim(anim);//Anim pas utilisé pour le moment dans modelSTL, mais servirais
@@ -205,6 +207,7 @@ void PlanForm::render() {
 void staticForm::update(reel delta_t) {
 
 }
+
 void staticForm::render() {
     // Render the STL model
     Form::render();
@@ -231,8 +234,104 @@ void staticForm::render() {
 }
 
 void Catapulte::update(reel delta_t) {
+    static int etat = 0;
+    static bool pastLaunch = false;
+    static reel masse, alpha = 0.01;
+    static Vector sumForce, acc, speed, speedRot, speedSphere = 0;
+    static Point position, rot;
+    static reel ropeSpeed = 0;
+    static bool ballLaunched = false;
+    rot = anim.getRotation();
 
+    // Mise à jour de la position
+    position = _chassis->getAnim().getPos();
+    position.y = position.y + _chassis->getAnim().getSize().rayon;
+
+    switch (etat)
+    {
+    case 0:{
+        if(ballLaunched)
+        {
+            return;
+        }
+        if (getInputFlags().launch) {
+            pastLaunch = true;
+            // reel angle = sqrt(rot.x*rot.x + rot.z*rot.z);
+            // printf("Catapulte::update, speed ++, angle = sqrt(x²+z²) = %f\n", angle);
+            if (rot.x < 125)
+            {
+                reel A = (365 - 9 * (ropeSpeed));
+                speedRot.x = A;
+                
+                // reel speed = sqrt(speedRot.x*speedRot.x + speedRot * speedRot.y );
+                // printf("Catapulte::update, speed ++, speed = sqrt(x²+z²) = %f\n", speed);
+                ropeSpeed += (speedRot.x >= 45 ? 0.3 : 0);
+            } else {
+                ropeSpeed = 0;
+                speedRot = 0;
+            }
+
+            Point posSphere = position;
+            reel offesetAngle = _sphere->getAnim().getSize().rayon/anim.getSize().rayon;
+            posSphere.z = 2 * sin(rot.x*M_PI/180. - offesetAngle) + anim.getPos().z;
+            posSphere.y = 2 * cos(rot.x*M_PI/180. - offesetAngle) + anim.getPos().y;
+            _sphere->getAnim().setPos(posSphere);
+        } else {
+            if(pastLaunch){
+                pastLaunch = false;
+                etat = 1;//Lancer la balle
+                printf("Lancer la balle\n");
+                speedSphere = Vector(0, 2, 1);
+                speedSphere = speedSphere * rot.x/2.;
+            }
+            speedRot = 0;
+            ropeSpeed = 0;
+        }
+
+    
+    }
+        break;
+    case 1:{//Faire tourner le bras dans l'autre sens
+        Point posSphere = position;
+        reel offesetAngle = 0;
+         offesetAngle = _sphere->getAnim().getSize().rayon/anim.getSize().rayon;
+         printf("Angle:%f<\n",rot.x);
+        posSphere.z = 2 * sin(rot.x*M_PI/180. - offesetAngle) + anim.getPos().z;
+        posSphere.y = 2 * cos(rot.x*M_PI/180. - offesetAngle) + anim.getPos().y;
+        _sphere->getAnim().setPos(posSphere);
+       
+        etat=2;
+
+        
+    }
+        break;
+    case 2:{//Lancer la balle à une vitesse dependent de la rotation atteinte en x
+        _sphere->getAnim().setSpeed(speedSphere);
+        etat = 0;
+        
+        ballLaunched = true;
+    }
+        break;
+    default:
+        break;
+    }
+    
+
+    
+
+    // Application de la rotation à la catapulte
+    // Vector rotationIncrement = Vector(anim.getRotation().x, anim.getRotation().y, anim.getRotation().z) + speedRot.integral(delta_t);
+
+    // Rotation du bras de la catapulte autour de ses axes X et Y
+    // rotateVector(speedRot, rotationIncrement);
+
+    anim.setSpeedRotation(speedRot);
+    anim.setRotRelative(speedRot.integral(delta_t));
+
+    anim.setPos(position);
+    
 }
+
 void Catapulte::render() {
     // Render the STL model
     Form::render();

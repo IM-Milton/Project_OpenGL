@@ -1,9 +1,7 @@
 #include <cmath>
 #include "geometry.h"
 
-#ifndef M_PI
-    #define M_PI		3.14159265358979323846
-#endif
+
 
 void Point::translate(const Vector &v)
 {
@@ -205,3 +203,4 @@ void rotateVector(Vector& vec, Point degrees) {
     vec = vec * rotY;
     vec = vec * rotX;
 }
+

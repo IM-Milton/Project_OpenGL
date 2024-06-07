@@ -41,51 +41,25 @@ bool Scene::init()
 
 bool Scene::setupObjects() // Initialisation des objets
 {
-    // Create here specific forms and add them to the list...
-    // Don't forget to update the actual number_of_forms !
-    // Cube *pFace = NULL;
-    // pFace = new Cube(Vector(1,0,0), Vector(0,1,0), Point(-0.5, -0.5, -0.5), 1, 1, ORANGE);
-    // forms_list[number_of_forms] = pFace;
-    // number_of_forms++;
+        // Create here specific forms and add them to the list...
+        // Don't forget to update the actual number_of_forms !
+        // Cube *pFace = NULL;
+        // pFace = new Cube(Vector(1,0,0), Vector(0,1,0), Point(-0.5, -0.5, -0.5), 1, 1, ORANGE);
+        // forms_list[number_of_forms] = pFace;
+        // number_of_forms++;
 
-    // Brique *brique = new Brique(GREEN,18.4, size,"Solidworks/brique.STL");
-    // if(!brique->modelSTL.isLoaded())
-    // {
-    //     printf("Failed to load brique.STL model!\n");
-    // }
-    // brique->getAnim().setPos(Point(1,1,1));
-    // addForm(brique);
+        // Brique *brique = new Brique(GREEN,18.4, size,"Solidworks/brique.STL");
+        // if(!brique->modelSTL.isLoaded())
+        // {
+        //     printf("Failed to load brique.STL model!\n");
+        // }
+        // brique->getAnim().setPos(Point(1,1,1));
+        // addForm(brique);
 
-
-    Catapulte *brasCatapulte = new Catapulte(YELLOW,Point(2,0,2),Point(0,0,0),"Solidworks/catapulte_test.STL");
-    if(!brasCatapulte->modelSTL.isLoaded())
-    {
-        printf("Failed to load Spoon.STL model!\n");
-        delete brasCatapulte; // Supprimez l'objet brique si le chargement échoue
-    }
-    addForm(brasCatapulte);
-
-
-
-    staticForm* catapulte = new staticForm(RED,Point(2,1,1),Point(0,0,0),"Solidworks/Chassis_Finished.STL");
-    if(!catapulte->modelSTL.isLoaded())
-    {
-        printf("Failed to load Chassis.STL model!\n");
-        delete catapulte; // Supprimez l'objet brique si le chargement échoue
-    }
-    addForm(catapulte);
-
-
-    staticForm* chateau = new staticForm(GREEN,Point(0,0,0),Point(0,0,0),"Soldiworks/chateau.STL");
-    if(!catapulte->modelSTL.isLoaded())
-    {
-        delete catapulte; // Supprimez l'objet brique si le chargement échoue
-    }
-
-    PlanForm *sol = new PlanForm(GREEN, "Solidworks/sol.STL"); // Créez un nouvel objet de brique en dehors de la boucle
+        PlanForm *sol = new PlanForm(GREEN, "Solidworks/sol.STL"); // Créez un nouvel objet de brique en dehors de la boucle
         if (!sol->modelSTL.isLoaded()){
             printf("Failed to load sol.STL model!\n");
-            delete sol; // Supprimez l'objet brique si le chargement échoue
+            // delete sol; // Supprimez l'objet brique si le chargement échoue
         }
         HitZone size = {10000};
         sol->getAnim().setSize(size);
@@ -96,29 +70,54 @@ bool Scene::setupObjects() // Initialisation des objets
         Point pt(-size.rayon/2, 0, -size.rayon/2);
         sol->getAnim().setPos(pt); // Déplacez le nouvel objet brique
         sol->setPhysics(false);
-    addForm(sol);
-    Sphere *sphere = new Sphere(YELLOW,200,{0.5});
-    sphere->getAnim().setPos(Point(1.5,0,15));
-    sphere->getAnim().setSpeed(Vector(0, 0, -10.0));
-    sphere->getAnim().setSpeedRotation(Vector(0, 360*100, 0.0));
-    Sphere* newS = new Sphere(*sphere);
-    newS->getAnim().setPos(Point(0.5,0,15+2));
-    // sphere->setCollisionEffect(false);
-    addForm(sphere);
-    addForm(newS);
-    staticForm *chateau = new staticForm(RED, Point(0, 0, 0), Point(0, 180, 0), "Solidworks/chateau.STL");
-    if (!chateau->modelSTL.isLoaded()){
-        printf("Failed to load chateau.STL model!\n");
-        delete chateau; // Supprimez l'objet brique si le chargement échoue
-    }
-    // addForm(chateau);
+        addForm(sol);
 
-    setupMurDeBrique(10,6, Point(13.65,0,0),RED);
+        Sphere *sphere = new Sphere(BROWN,10,Point(0,0,0),{0.3}, "Solidworks/boule.stl");
+        sphere->getAnim().setSpeed(Vector(0,10,10));
+        if (!sphere->modelSTL.isLoaded()){
+            printf("Failed to load boule.STL model!\n");
+            // delete sol; // Supprimez l'objet brique si le chargement échoue
+        }
+        sphere->getAnim().setPos(Point(1.5,0,15));
+        sphere->getAnim().setSpeed(Vector(0, 0, -10.0));
+        sphere->getAnim().setSpeedRotation(Vector(0, 360*100, 0.0));
+        Sphere* newS = new Sphere(*sphere);
+        // newS->getAnim().setPos(Point(0.5,0,15+2));
+        // sphere->setCollisionEffect(false);
+        addForm(sphere);
+        // addForm(newS);
+        Point posCatapulte(-5,0,-5);
+        staticForm* chassis = new staticForm(RED,posCatapulte,Point(0,0,0),"Solidworks/chassis.STL", {1.48});
+        if(!chassis->modelSTL.isLoaded())
+        {
+            printf("Failed to load chassis.STL model!\n");
+            // delete chassis; // Supprimez l'objet brique si le chargement échoue
+        }
+        addForm(chassis);
 
-    if(USE_STL)
-    {
-        printf("afficher les STL");
-    }
+        Point rotBrasCatapulte(-125,0,0);
+        Catapulte *brasCatapulte = new Catapulte(chassis, sphere, WHITE,{2},posCatapulte,rotBrasCatapulte,"Solidworks/bras_catapulte.stl");
+        if(!brasCatapulte->modelSTL.isLoaded())
+        {
+            printf("Failed to load brasCatapulte.STL model!\n");
+            // delete brasCatapulte; // Supprimez l'objet brique si le chargement échoue
+        }
+        brasCatapulte->getAnim().setSpeedRotation(Vector(0,0,0));
+        addForm(brasCatapulte);
+
+        staticForm *chateau = new staticForm(RED, Point(0, 0, 0), Point(0, 0, 0), "Solidworks/chateau.STL");
+        if (!chateau->modelSTL.isLoaded()){
+            printf("Failed to load chateau.STL model!\n");
+            // delete chateau; // Supprimez l'objet brique si le chargement échoue
+        }
+        // addForm(chateau);
+
+        setupMurDeBrique(10,6, Point(13.65,0,0),RED);
+
+        if(USE_STL)
+        {
+            printf("afficher les STL");
+        }
 
 }
 
@@ -521,7 +520,6 @@ void Scene::update(reel delta_t){
     i = 0;
     if(_pause)
     {
-        
         return;
     }
     while (formlist[i] != NULL) {
@@ -553,6 +551,34 @@ void Scene::update(reel delta_t){
                     checkCollision(i,pos,rot,Fn, delta_t);
 
                 }break;
+                case CATAPULTE_BRAS:{
+                    formlist[i]->setInputFlags(input);
+                    // formlist[i]->getAnim().setPos(pos);
+                    // formlist[i]->getAnim().setRotation(rot);
+                    // formlist[i]->setFn(Fn);
+                    if(input.decreaseRope)
+                    {
+                        //Diminue la force de la corde.
+                    }
+                    if(input.increaseRope)
+                    {
+                        //Augmente la force de la corde.
+                    }
+                    if(input.launch)
+                    {
+                        //Fais le lancement de la boule.
+                    }
+                    if(input.rotateLeft)
+                    {
+                        //tourne la catapulte vers la gauche.
+                    }
+                    if(input.rotateRight)
+                    {
+                        //tourne la catapulte vers la droite.
+                    }
+                }
+                break;
+
                 default:
                     break;
             }
@@ -586,22 +612,22 @@ void Scene::render()
 
     // X, Y and Z axis
 
-    // glPushMatrix(); // Preserve the camera viewing point for further forms
-    // // Render the coordinates system
-    // glBegin(GL_LINES);
-    // {
-    //     glColor3f(1.0f, 0.0f, 0.0f);
-    //     glVertex3i(0, 0, 0);
-    //     glVertex3i(1, 0, 0);
-    //     glColor3f(0.0f, 1.0f, 0.0f);
-    //     glVertex3i(0, 0, 0);
-    //     glVertex3i(0, 1, 0);
-    //     glColor3f(0.0f, 0.0f, 1.0f);
-    //     glVertex3i(0, 0, 0);
-    //     glVertex3i(0, 0, 1);
-    // }
-    // glEnd();
-    // glPopMatrix(); // Restore the camera viewing point for next object
+    glPushMatrix(); // Preserve the camera viewing point for further forms
+    // Render the coordinates system
+    glBegin(GL_LINES);
+    {
+        glColor3f(1.0f, 0.0f, 0.0f);
+        glVertex3i(0, 0, 0);
+        glVertex3i(1, 0, 0);
+        glColor3f(0.0f, 1.0f, 0.0f);
+        glVertex3i(0, 0, 0);
+        glVertex3i(0, 1, 0);
+        glColor3f(0.0f, 0.0f, 1.0f);
+        glVertex3i(0, 0, 0);
+        glVertex3i(0, 0, 1);
+    }
+    glEnd();
+    glPopMatrix(); // Restore the camera viewing point for next object
 
     // Render the list of forms
     unsigned short i = 0;
@@ -644,23 +670,6 @@ void Scene::run()
     close(&gWindow);
 }
 
-void Scene::close(SDL_Window** window)
-{
-    //Destroy window
-    SDL_DestroyWindow(*window);
-    *window = NULL;
-
-    //Quit SDL subsystems
-    SDL_Quit();
-}
-
-bool Scene::addForm(Form *form)
-{
-    formlist[formIndex] = form;
-    formIndex = (formIndex + 1)%MAX_FORMS_NUMBER;
-
-    return true;
-}
 
 char Scene::checkInput()
 {
@@ -689,12 +698,10 @@ char Scene::checkInput()
                         break;
                     case SDLK_z://zoom
                     {
-
-                    
                         camera_position.z -= 1;
 
                         int i=0;
-                        while (formlist[i]!=NULL) 
+                        while (formlist[i]!=NULL)
                         {
                             // Brique* newBrique = new Brique(*brique); // Créez un nouvel objet brique à chaque itération
                             if(formlist[i]->getAnim().getTypeForm() == SPHERE)
@@ -729,18 +736,19 @@ char Scene::checkInput()
                       camera_position.y -= 1;
                       printf("Down\n");
                     break;
-
-
                     case SDLK_SPACE:
                         input.space_down = true;
                         if(nbSpaces == 0 || nbSpaces == 2)
                         {
                             nbSpaces++;
                         }
-
-
                         printf("pause down\n");
-                        break;
+                    break;
+                    case SDLK_l:{
+                        input.launch = true;
+                        printf("launch down\n");
+                    }
+                    break;
 
                     default:
                         break;
@@ -754,10 +762,12 @@ char Scene::checkInput()
                     case SDLK_SPACE:
                         input.space_up = true;
                         nbSpaces ++;
-
-
                         printf("pause up\n");
-
+                    break;
+                    case SDLK_l:{
+                        input.launch = false;
+                        printf("launch up\n");
+                    }
                     default:
                         break;
                     }
@@ -816,6 +826,23 @@ char Scene::checkInput()
 
 
 
+void Scene::close(SDL_Window** window)
+{
+    //Destroy window
+    SDL_DestroyWindow(*window);
+    *window = NULL;
+
+    //Quit SDL subsystems
+    SDL_Quit();
+}
+
+bool Scene::addForm(Form *form)
+{
+    formlist[formIndex] = form;
+    formIndex = (formIndex + 1)%MAX_FORMS_NUMBER;
+
+    return true;
+}
 
 bool removeForm(int index)
 {
@@ -823,7 +850,7 @@ bool removeForm(int index)
 
 }
 
-bool removeForm(Form* form);
+// bool removeForm(Form* form);
 
 bool Scene::popForm()
 {

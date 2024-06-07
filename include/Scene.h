@@ -15,13 +15,6 @@
 #include "forms.h"
 
 
-struct sceneInput
-{
-    bool launch,space_down,increaseRope,decreaseRope,rotateLeft,rotateRight,reset,quit,space_up;
-
-};
-
-
 
 class Scene
 {
@@ -46,7 +39,7 @@ private:
 
     void setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col);
 
-    
+
 
 
 
@@ -57,7 +50,7 @@ public:
 
 
 
-    sceneInput input = {false,false,false,false,false,false,false,false,false};
+    sceneInput input = {false,false,false,false,false,false,false,false,false,false};
     bool _pause = false;
 
     Scene();
