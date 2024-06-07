@@ -240,7 +240,7 @@ void Catapulte::update(reel delta_t) {
     static Vector sumForce, acc, speed, speedRot, speedSphere = 0;
     static Point position, rot;
     static reel ropeSpeed = 0;
-    static bool ballLaunched = false;
+    // static bool ballLaunched = false;
     rot = anim.getRotation();
 
     // Mise à jour de la position
@@ -250,10 +250,7 @@ void Catapulte::update(reel delta_t) {
     switch (etat)
     {
     case 0:{
-        if(ballLaunched)
-        {
-            return;
-        }
+        
         if (getInputFlags().launch) {
             pastLaunch = true;
             // reel angle = sqrt(rot.x*rot.x + rot.z*rot.z);
@@ -281,8 +278,10 @@ void Catapulte::update(reel delta_t) {
                 pastLaunch = false;
                 etat = 1;//Lancer la balle
                 printf("Lancer la balle\n");
-                speedSphere = Vector(0, 2, 1);
-                speedSphere = speedSphere * rot.x/2.;
+                _sphere->setFn(0);
+                float angle = (180-45) * M_PI/180.;
+                speedSphere = Vector(0, sin(angle), cos(angle));
+                speedSphere = rot.x/5. * speedSphere;
             }
             speedRot = 0;
             ropeSpeed = 0;
@@ -292,24 +291,39 @@ void Catapulte::update(reel delta_t) {
     }
         break;
     case 1:{//Faire tourner le bras dans l'autre sens
+        if(rot.x>(-125)){
+            speedRot.x = -360*2;
+        }
+        else 
+        {
+            ropeSpeed = 0;
+            speedRot = 0;
+        }
         Point posSphere = position;
-        reel offesetAngle = 0;
-         offesetAngle = _sphere->getAnim().getSize().rayon/anim.getSize().rayon;
-         printf("Angle:%f<\n",rot.x);
+        reel offesetAngle = _sphere->getAnim().getSize().rayon/anim.getSize().rayon;
+        printf("Angle:%f<\n",rot.x);
         posSphere.z = 2 * sin(rot.x*M_PI/180. - offesetAngle) + anim.getPos().z;
         posSphere.y = 2 * cos(rot.x*M_PI/180. - offesetAngle) + anim.getPos().y;
         _sphere->getAnim().setPos(posSphere);
-       
-        etat=2;
 
-        
+        if(rot.x <= 15){
+            etat=2;
+            _sphere->getAnim().setSpeed(speedSphere);
+        }
+       
     }
         break;
     case 2:{//Lancer la balle à une vitesse dependent de la rotation atteinte en x
-        _sphere->getAnim().setSpeed(speedSphere);
-        etat = 0;
-        
-        ballLaunched = true;
+        if(rot.x>(-125)){
+            speedRot.x = -360*2;
+        }
+        else 
+        {
+            ropeSpeed = 0;
+            speedRot = 0;
+            etat = 0;
+        }
+        // ballLaunched = true;
     }
         break;
     default:

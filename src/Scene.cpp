@@ -30,7 +30,7 @@ bool Scene::init()
     formIndex =0;
 
 
-    camera_position=Point(0, 1.0, 20.0);
+    camera_position=Point(0, 1.0, 30.0);
 
     quit=false;
     setupObjects();
@@ -72,38 +72,12 @@ bool Scene::setupObjects() // Initialisation des objets
         sol->setPhysics(false);
         addForm(sol);
 
-        Sphere *sphere = new Sphere(BROWN,10,Point(0,0,0),{0.3}, "Solidworks/boule.stl");
-        sphere->getAnim().setSpeed(Vector(0,10,10));
-        if (!sphere->modelSTL.isLoaded()){
-            printf("Failed to load boule.STL model!\n");
-            // delete sol; // Supprimez l'objet brique si le chargement échoue
-        }
-        sphere->getAnim().setPos(Point(1.5,0,15));
-        sphere->getAnim().setSpeed(Vector(0, 0, -10.0));
-        sphere->getAnim().setSpeedRotation(Vector(0, 360*100, 0.0));
-        Sphere* newS = new Sphere(*sphere);
-        // newS->getAnim().setPos(Point(0.5,0,15+2));
-        // sphere->setCollisionEffect(false);
-        addForm(sphere);
-        // addForm(newS);
-        Point posCatapulte(-5,0,-5);
-        staticForm* chassis = new staticForm(RED,posCatapulte,Point(0,0,0),"Solidworks/chassis.STL", {1.48});
-        if(!chassis->modelSTL.isLoaded())
-        {
-            printf("Failed to load chassis.STL model!\n");
-            // delete chassis; // Supprimez l'objet brique si le chargement échoue
-        }
-        addForm(chassis);
+        setupCatapulte(Point(0,0,10));
 
-        Point rotBrasCatapulte(-125,0,0);
-        Catapulte *brasCatapulte = new Catapulte(chassis, sphere, WHITE,{2},posCatapulte,rotBrasCatapulte,"Solidworks/bras_catapulte.stl");
-        if(!brasCatapulte->modelSTL.isLoaded())
-        {
-            printf("Failed to load brasCatapulte.STL model!\n");
-            // delete brasCatapulte; // Supprimez l'objet brique si le chargement échoue
-        }
-        brasCatapulte->getAnim().setSpeedRotation(Vector(0,0,0));
-        addForm(brasCatapulte);
+        // setupCatapulte(Point(3,0,10));
+
+        // setupCatapulte(Point(-3,0,10));
+
 
         staticForm *chateau = new staticForm(RED, Point(0, 0, 0), Point(0, 0, 0), "Solidworks/chateau.STL");
         if (!chateau->modelSTL.isLoaded()){
@@ -168,6 +142,42 @@ void Scene::setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col
     }
     delete brique; // Supprimez l'objet brique une fois que vous avez terminé avec lui
 
+}
+
+
+void Scene::setupCatapulte(Point position){
+        Sphere *sphere = new Sphere(BROWN,10,position,{0.3}, "Solidworks/boule.stl");
+        // sphere->getAnim().setSpeed(Vector(0,10,10));
+        if (!sphere->modelSTL.isLoaded()){
+            printf("Failed to load boule.STL model!\n");
+            // delete sol; // Supprimez l'objet brique si le chargement échoue
+        }
+        // sphere->getAnim().setPos(Point(1.5,0,15));
+        // sphere->getAnim().setSpeed(Vector(0, 0, -10.0));
+        // sphere->getAnim().setSpeedRotation(Vector(0, 360*100, 0.0));
+        // Sphere* newS = new Sphere(*sphere);
+        // newS->getAnim().setPos(Point(0.5,0,15+2));
+        // sphere->setCollisionEffect(false);
+        addForm(sphere);
+        // addForm(newS);
+        staticForm* chassis = new staticForm(RED,position,Point(0,0,0),"Solidworks/chassis.STL", {1.48});
+        if(!chassis->modelSTL.isLoaded())
+        {
+            printf("Failed to load chassis.STL model!\n");
+            // delete chassis; // Supprimez l'objet brique si le chargement échoue
+        }
+        addForm(chassis);
+
+
+        Point rotBrasCatapulte(-125,0,0);
+        Catapulte *brasCatapulte = new Catapulte(chassis, sphere, WHITE,{2},position,rotBrasCatapulte,"Solidworks/bras_catapulte.stl");
+        if(!brasCatapulte->modelSTL.isLoaded())
+        {
+            printf("Failed to load brasCatapulte.STL model!\n");
+            // delete brasCatapulte; // Supprimez l'objet brique si le chargement échoue
+        }
+        brasCatapulte->getAnim().setSpeedRotation(Vector(0,0,0));
+        addForm(brasCatapulte);
 }
 
 reel angleDeChuteObjet(reel angle, reel inclinaisionPlan) {

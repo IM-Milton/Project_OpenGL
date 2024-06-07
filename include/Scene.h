@@ -39,7 +39,7 @@ private:
 
     void setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col);
 
-
+    void setupCatapulte(Point position);
 
 
 
