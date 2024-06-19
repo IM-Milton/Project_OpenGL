@@ -279,7 +279,7 @@ void Catapulte::update(reel delta_t) {
                 etat = 1;//Lancer la balle
                 printf("Lancer la balle\n");
                 _sphere->setFn(0);
-                float angle = (180-45) * M_PI/180.;
+                float angle = (180-25) * M_PI/180.;
                 speedSphere = Vector(0, sin(angle), cos(angle));
                 speedSphere = rot.x/5. * speedSphere;
             }
@@ -306,7 +306,7 @@ void Catapulte::update(reel delta_t) {
         posSphere.y = 2 * cos(rot.x*M_PI/180. - offesetAngle) + anim.getPos().y;
         _sphere->getAnim().setPos(posSphere);
 
-        if(rot.x <= 15){
+        if(rot.x <= 10){
             etat=2;
             _sphere->getAnim().setSpeed(speedSphere);
         }

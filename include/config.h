@@ -14,7 +14,7 @@ const int KILL_DISTANCE = 50;
 const int MAX_FORMS_NUMBER = 2000;
 
 // Animation actualization delay (in ms) => 100 updates per second
-const /*Uint32*/int ANIM_DELAY = 1;
+const /*Uint32*/int ANIM_DELAY = 100;
 
 const int PHYSIQS_DELAY =1;
 

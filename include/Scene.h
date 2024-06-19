@@ -13,15 +13,14 @@
 // Module for generating and rendering forms
 #include "config.h"
 #include "forms.h"
-
-
+#include <thread>
 
 class Scene
 {
 private:
     Form* formlist[MAX_FORMS_NUMBER];
     Form* tempFormlist[MAX_FORMS_NUMBER];//Utiliser pour stocker l'etat temporairement
-    int formIndex =0;
+    int numberOfForm =0;
     Uint32 current_time, previous_time, elapsed_time;
     SDL_Event event;
     Point camera_position;
@@ -36,7 +35,6 @@ private:
     bool _useSDL=false;
     void close(SDL_Window** window);
     void checkCollision(int &formIndex, Point &pos, Point &rot, Vector &Fn, reel delta_t);
-
     void setupMurDeBrique(int Longeur, int largeur, Point initiale, Color col, HitZone size = {((800./2.)/1000.)}, Point rot = Point(0,0,0));
 
     void setupCatapulte(Point position, Point rot = Point(0,0,0));
@@ -47,11 +45,6 @@ private:
 
 
 public:
-
-
-
-
-
     sceneInput input = {false,false,false,false,false,false,false,false,false,false};
     bool _pause = false;
 

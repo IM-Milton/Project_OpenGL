@@ -21,6 +21,7 @@ int main(int argc, char* args[])
 {
     // The window we'll be rendering to
     Scene* mainScene = new Scene();
+    // std::thread update(Scene::updateLoop, mainScene);
     mainScene->init();
     while(!mainScene->gameOver())
     {
